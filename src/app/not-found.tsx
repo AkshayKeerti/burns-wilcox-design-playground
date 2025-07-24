@@ -14,10 +14,6 @@ export default function NotFound() {
         <h1 className="text-[180px] leading-[172px] font-normal text-tertiary-blue-50 font-['Graphik_Trial','Graphik',sans-serif] tracking-[-0.04em] m-0 drop-shadow-lg">
           Coming Soon
         </h1>
-        <p className="text-[18px] leading-[21.6px] font-normal text-tertiary-blue-50 font-['Graphik_Trial','Graphik',sans-serif] mt-8 max-w-[600px] drop-shadow">
-          Subscribe to our social networks to be the first to know all the events and get a discount
-          on your first order!
-        </p>
       </div>
     </div>
   );
