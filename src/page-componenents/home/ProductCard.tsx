@@ -6,20 +6,23 @@ export function ProductCard({
   description,
   image,
   expanded,
-  onClick,
+  onMouseEnter,
+  onMouseLeave,
 }: {
   icon: React.ReactNode;
   title: string;
   description: string;
   image?: string;
   expanded: boolean;
-  onClick: () => void;
+  onMouseEnter: () => void;
+  onMouseLeave: () => void;
 }) {
   if (expanded && image) {
     return (
       <div
         className={`relative bg-tertiary-blue-300 rounded-none border border-corporate-grey-50 flex min-h-[360px] cursor-pointer transition-all duration-300 overflow-hidden flex-[2_2_0%] z-10`}
-        onClick={onClick}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
         tabIndex={0}
         role="button"
         aria-expanded={expanded}
@@ -57,7 +60,8 @@ export function ProductCard({
   return (
     <div
       className={`relative bg-tertiary-blue-300 rounded-none border border-corporate-grey-50 flex flex-col justify-between min-h-[360px] cursor-pointer transition-all duration-300 overflow-hidden ${expanded ? 'flex-[2_2_0%] z-10' : 'flex-1'}`}
-      onClick={onClick}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
       tabIndex={0}
       role="button"
       aria-expanded={expanded}

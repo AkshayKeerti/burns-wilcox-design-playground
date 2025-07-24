@@ -37,7 +37,7 @@ const products = [
 ];
 
 export default function OurProducts() {
-  const [openIdx, setOpenIdx] = useState<number | null>(0);
+  const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
     <section className="bg-tertiary-blue-50 w-full flex flex-col items-center py-12 px-4 md:px-16">
@@ -59,7 +59,8 @@ export default function OurProducts() {
               key={product.title}
               {...product}
               expanded={openIdx === idx}
-              onClick={() => setOpenIdx(idx)}
+              onMouseEnter={() => setOpenIdx(idx)}
+              onMouseLeave={() => setOpenIdx(null)}
             />
           ))}
         </div>

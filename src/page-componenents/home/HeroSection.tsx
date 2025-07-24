@@ -77,7 +77,7 @@ export default function HeroSection() {
       {/* Slideshow Images */}
       <div
         ref={containerRef}
-        className="flex h-full transition-transform duration-500 ease-in-out"
+        className="flex h-full transition-transform duration-1000 ease-in-out"
         style={{
           transform: `translateX(${-current * 100}%)`,
         }}
