@@ -31,8 +31,6 @@ const stats = [
 ];
 
 export default function StatsSection() {
-  // Duplicate stats for seamless loop
-  const statsLoop = [...stats, ...stats];
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -74,12 +72,15 @@ export default function StatsSection() {
     }
   };
 
+  // Create a seamless loop by duplicating the stats array
+  const statsLoop = [...stats, ...stats];
+
   return (
     <section className="bg-tertiary-blue-50 w-full flex flex-col items-center py-24 px-4 md:px-16">
-      <div className="w-full">
+      <div className="w-full overflow-hidden">
         <div
           ref={scrollRef}
-          className={`overflow-x-hidden group select-none ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+          className={`select-none ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
           onMouseDown={onMouseDown}
           onMouseLeave={onMouseLeave}
           onMouseUp={onMouseUp}
@@ -89,7 +90,8 @@ export default function StatsSection() {
           onTouchMove={onTouchMove}
         >
           <div
-            className={`flex flex-row gap-16 md:gap-[109px] items-center min-w-[700px] md:min-w-0 animate-stats-scroll group-hover:[animation-play-state:paused] ${isDragging ? '[animation-play-state:paused]' : ''}`}
+            className={`flex flex-row gap-16 md:gap-[109px] items-center animate-stats-scroll group-hover:[animation-play-state:paused] ${isDragging ? '[animation-play-state:paused]' : ''}`}
+            style={{ width: 'max-content' }}
           >
             {statsLoop.map((stat, idx) => (
               <div
@@ -114,21 +116,21 @@ export default function StatsSection() {
               </div>
             ))}
           </div>
-          <style jsx>{`
-            @keyframes stats-scroll {
-              0% {
-                transform: translateX(0);
-              }
-              100% {
-                transform: translateX(-50%);
-              }
-            }
-            .animate-stats-scroll {
-              animation: stats-scroll 10s linear infinite;
-            }
-          `}</style>
         </div>
       </div>
+      <style jsx>{`
+        @keyframes stats-scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-stats-scroll {
+          animation: stats-scroll 15s linear infinite;
+        }
+      `}</style>
     </section>
   );
 }
