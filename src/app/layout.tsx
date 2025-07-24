@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 import Navbar from '@/components/navbar/Navbar';
-import Footer from '@/components/Footer/Footer';
 
 export const metadata: Metadata = {
   title: 'Burns & Wilcox MENA site',
@@ -113,7 +112,6 @@ export default function RootLayout({
       <body className={`${graphikFont.className} antialiased`}>
         <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );

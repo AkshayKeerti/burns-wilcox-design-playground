@@ -3,7 +3,7 @@ import { StackedLogo } from '@/components/logo/Logo';
 
 export default function Navbar() {
   return (
-    <nav className="bg-white w-full h-[72px] flex items-center justify-center border-b border-gray-100">
+    <nav className="bg-white w-full h-[72px] flex items-center justify-center border-b border-gray-100 z-10">
       <div className="flex flex-row items-center justify-between w-full h-[72px] px-16">
         <div className="flex flex-row gap-6 items-center">
           <Link href="/">
