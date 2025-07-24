@@ -88,14 +88,22 @@ export default function StatsSection() {
           onTouchEnd={onTouchEnd}
           onTouchMove={onTouchMove}
         >
-          <div className={`flex flex-row gap-16 md:gap-[109px] items-center min-w-[700px] md:min-w-0 animate-stats-scroll group-hover:[animation-play-state:paused] ${isDragging ? '[animation-play-state:paused]' : ''}`}>
+          <div
+            className={`flex flex-row gap-16 md:gap-[109px] items-center min-w-[700px] md:min-w-0 animate-stats-scroll group-hover:[animation-play-state:paused] ${isDragging ? '[animation-play-state:paused]' : ''}`}
+          >
             {statsLoop.map((stat, idx) => (
               <div
                 key={stat.label + idx}
                 className="flex flex-col items-center gap-6 min-w-[185px] md:min-w-[185px] lg:min-w-[216px]"
               >
                 <div className="flex items-center justify-center w-[61px] h-[68px] mb-2">
-                  <Image src={stat.icon} alt={stat.label + ' icon'} width={61} height={68} className="object-contain" />
+                  <Image
+                    src={stat.icon}
+                    alt={stat.label + ' icon'}
+                    width={61}
+                    height={68}
+                    className="object-contain"
+                  />
                 </div>
                 <div className="text-[64px] leading-[69px] font-black text-corporate-blue-500 text-center font-sans">
                   {stat.value}
@@ -108,8 +116,12 @@ export default function StatsSection() {
           </div>
           <style jsx>{`
             @keyframes stats-scroll {
-              0% { transform: translateX(0); }
-              100% { transform: translateX(-50%); }
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-50%);
+              }
             }
             .animate-stats-scroll {
               animation: stats-scroll 10s linear infinite;
@@ -119,4 +131,4 @@ export default function StatsSection() {
       </div>
     </section>
   );
-} 
+}

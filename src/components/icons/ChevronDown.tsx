@@ -1,4 +1,17 @@
 export default function ChevronRight({ className }: { className: string }) {
-    return (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className={className}>
-        <path d="M9.70703 16.9496L15.414 11.2426L9.70703 5.53564L8.29303 6.94964L12.586 11.2426L8.29303 15.5356L9.70703 16.9496Z" fill="#012169"/>
-      </svg>)}
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      className={className}
+    >
+      <path
+        d="M9.70703 16.9496L15.414 11.2426L9.70703 5.53564L8.29303 6.94964L12.586 11.2426L8.29303 15.5356L9.70703 16.9496Z"
+        fill="#012169"
+      />
+    </svg>
+  );
+}

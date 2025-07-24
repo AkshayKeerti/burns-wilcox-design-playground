@@ -17,14 +17,21 @@ export default function InsuranceCtaSection() {
               Your Insurance Needs Matter
             </h2>
             <p className="text-[20px] leading-6 font-normal font-sans">
-              Reach out to discuss tailored insurance solutions that meet your unique business needs today.
+              Reach out to discuss tailored insurance solutions that meet your unique business needs
+              today.
             </p>
           </div>
           <div className="flex flex-row gap-4 mt-2">
-            <Link href="/contact" className="px-6 py-3 bg-white text-black text-[18px] font-normal border border-white hover:bg-gray-100 transition-colors">
+            <Link
+              href="/contact"
+              className="px-6 py-3 bg-white text-black text-[18px] font-normal border border-white hover:bg-gray-100 transition-colors"
+            >
               Contact
             </Link>
-            <Link href="/learn-more" className="px-6 py-3 bg-transparent text-white text-[18px] font-normal border border-white hover:bg-white hover:text-black transition-colors">
+            <Link
+              href="/learn-more"
+              className="px-6 py-3 bg-transparent text-white text-[18px] font-normal border border-white hover:bg-white hover:text-black transition-colors"
+            >
               Learn More
             </Link>
           </div>
@@ -32,4 +39,4 @@ export default function InsuranceCtaSection() {
       </div>
     </section>
   );
-} 
+}

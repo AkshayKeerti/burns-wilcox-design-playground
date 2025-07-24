@@ -1,9 +1,4 @@
 import { StackedLogo } from '@/components/logo/Logo';
-import Image from 'next/image';
-import Link from 'next/link';
-
-const imgContent = "http://localhost:3845/assets/003757d56e52b6202535266c3b9d36e3c9d571b2.png";
-const imgDivider = "http://localhost:3845/assets/6df6bf80a6438a9f5b93f416ca1ec1c6a1e13286.svg";
 
 const columns = [
   {
@@ -20,12 +15,7 @@ const columns = [
   },
   {
     title: 'Corporate General Broking',
-    links: [
-      'Property',
-      'Casualty',
-      'Engineering',
-      'Marine',
-    ],
+    links: ['Property', 'Casualty', 'Engineering', 'Marine'],
   },
   {
     title: 'Human Capital Benefits',
@@ -57,17 +47,11 @@ const columns = [
   },
   {
     title: 'Reinsurance',
-    links: [
-      'Facultative',
-    ],
+    links: ['Facultative'],
   },
   {
     title: 'Risk Engineering & Consulting',
-    links: [
-      'Risk assessment, recommendations & improvement',
-      'Risk Analytics',
-      'Claims advocacy',
-    ],
+    links: ['Risk assessment, recommendations & improvement', 'Risk Analytics', 'Claims advocacy'],
   },
 ];
 
@@ -75,18 +59,22 @@ export default function Footer() {
   return (
     <footer className="bg-white w-full flex flex-col items-center">
       {/* Top Divider */}
-          <div className="h-px w-full max-w-7xl my-0 bg-corporate-grey-900 mt-16 mx-16"/>
+      <div className="h-px w-full max-w-7xl my-0 bg-corporate-grey-900 mt-16 mx-16" />
       {/* Columns */}
       <div className="w-full max-w-7xl px-4 md:px-16 py-16 flex flex-col gap-20">
         <div className="flex flex-col md:flex-row gap-10 md:gap-10 w-full">
-          {columns.map((col) => (
+          {columns.map(col => (
             <div key={col.title} className="flex-1 min-w-[180px] flex flex-col gap-4">
-              <h4 className="text-[18px] leading-[21.6px] font-medium text-black font-sans">{col.title}</h4>
+              <h4 className="text-[18px] leading-[21.6px] font-medium text-black font-sans">
+                {col.title}
+              </h4>
               <ul className="flex flex-col">
-                {col.links.map((link) => (
+                {col.links.map(link => (
                   <li key={link} className="py-2">
                     {/* Replace with real links as needed */}
-                    <span className="text-[12px] leading-[14px] font-normal text-black font-sans">{link}</span>
+                    <span className="text-[12px] leading-[14px] font-normal text-black font-sans">
+                      {link}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -94,7 +82,7 @@ export default function Footer() {
           ))}
         </div>
         {/* Bottom Divider */}
-        <div className="h-px w-full max-w-7xl my-0 bg-corporate-grey-900 mt-16 mx-16"/>
+        <div className="h-px w-full max-w-7xl my-0 bg-corporate-grey-900 mt-16 mx-16" />
         {/* Columns */}
         {/* Logo and Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between w-full gap-6">
@@ -108,4 +96,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-} 
+}

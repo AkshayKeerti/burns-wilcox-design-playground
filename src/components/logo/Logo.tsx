@@ -18,7 +18,7 @@ export function StackedLogo({ height = 60, width = 120 }: LogoProps) {
   );
 }
 
-export function ampersandLogo(logoProps: LogoProps) {
+export function ampersandLogo() {
   return (
     <Image src="/BW_Logo_Stacked_RGB_Blue.png" alt="Burns & Wilcox logo" width={120} height={60} />
   );
