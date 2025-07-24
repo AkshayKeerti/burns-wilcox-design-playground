@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <div className="relative w-screen h-[calc(100vh-72px)] m-0 p-0 overflow-hidden">
       <Image
-        src="/Launching-soon-hero.jpg"
+        src="/Launching-soon-hero.webp"
         alt="Launching Soon Hero"
         layout="fill"
         objectFit="cover"
