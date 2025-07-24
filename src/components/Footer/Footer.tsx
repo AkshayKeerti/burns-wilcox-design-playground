@@ -86,8 +86,8 @@ export default function Footer() {
         {/* Columns */}
         {/* Logo and Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between w-full gap-6">
-          <div className="flex items-center justify-center h-[60px] w-[120px] bg-center bg-cover">
-            <StackedLogo />
+          <div className="flex items-center justify-center h-[38px] w-[94px] bg-center bg-cover">
+            <StackedLogo height={38} width={94} />
           </div>
           <div className="text-[14px] leading-[21px] font-normal text-black font-roboto whitespace-pre">
             © 2025 Burns & Wilcox. All rights reserved.

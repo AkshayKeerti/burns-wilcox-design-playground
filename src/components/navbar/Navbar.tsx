@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="flex flex-row items-center justify-between w-full h-[72px] px-16">
         <div className="flex flex-row gap-6 items-center">
           <Link href="/">
-            <StackedLogo height={60} width={120} />
+            <StackedLogo height={38} width={94} />
           </Link>
           <div className="flex flex-row gap-8 items-center">
             <Link
