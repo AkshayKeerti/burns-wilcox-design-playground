@@ -21,12 +21,12 @@ const graphikFont = localFont({
       style: 'italic',
     },
     {
-      path: '../../public/font/graphik/GraphikExtraLight.otf',
+      path: '../../public/font/graphik/GraphikExtralight.otf',
       weight: '200',
       style: 'normal',
     },
     {
-      path: '../../public/font/graphik/GraphikExtraLightItalic.otf',
+      path: '../../public/font/graphik/GraphikExtralightItalic.otf',
       weight: '200',
       style: 'italic',
     },
@@ -61,12 +61,12 @@ const graphikFont = localFont({
       style: 'italic',
     },
     {
-      path: '../../public/font/graphik/GraphikLight.otf',
+      path: '../../public/font/graphik/GraphikSemibold.otf',
       weight: '600',
       style: 'normal',
     },
     {
-      path: '../../public/font/graphik/GraphikSemibold.otf',
+      path: '../../public/font/graphik/GraphikSemiboldItalic.otf',
       weight: '600',
       style: 'italic',
     },
