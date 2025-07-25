@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useRef, useState, useEffect } from 'react';
 
-const images = ['/hero.webp', '/hero.webp', '/hero.webp'];
+const images = ['/hero.jpeg', '/hero.jpeg', '/hero.jpeg'];
 
 const SLIDE_DURATION = 4000; // ms
 
