@@ -57,11 +57,11 @@ export default function HeroSection() {
               Our Commitment to Smarter Protection
             </h1>
             <p className="text-base md:text-lg font-normal text-white/90">
-              At Burns & Wilcox MENA, we leverage over 50 years of global expertise to
-              provide customized insurance solutions that meet the unique needs of your business.
-              Backed by the trusted legacy of the H.W. Kaufman Group and led by a team of seasoned
-              global professionals, we are committed to providing industry-leading risk management
-              and risk-transfer solutions to help your business.
+              At Burns & Wilcox MENA, we leverage over 50 years of global expertise to provide
+              customized insurance solutions that meet the unique needs of your business. Backed by
+              the trusted legacy of the H.W. Kaufman Group and led by a team of seasoned global
+              professionals, we are committed to providing industry-leading risk management and
+              risk-transfer solutions to help your business.
             </p>
           </div>
           <div className="flex gap-4 mt-2">
