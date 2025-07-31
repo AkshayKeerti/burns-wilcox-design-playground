@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const imgCta = '/cta_contact_us_burns&wilcox.jpg';
+const imgCta = '/contact-us-banner.png';
 
 export default function InsuranceCtaSection() {
   return (

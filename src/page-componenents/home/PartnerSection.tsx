@@ -6,7 +6,7 @@ export default function PartnerSection() {
   return (
     <section className="bg-white w-full flex flex-col items-center py-28 px-4 md:px-16">
       <div className="flex flex-col items-center w-full">
-        <div className="flex flex-col lg:flex-row gap-20 items-center w-full max-w-7xl">
+        <div className="flex flex-col lg:flex-row gap-20 items-center w-full">
           {/* Left Image */}
           <div className="flex-1 min-w-[320px] h-[400px] lg:h-[640px] relative bg-center bg-cover rounded-none">
             <Image

@@ -2,7 +2,9 @@
 import React, { useState } from 'react';
 import { ProductCard } from './ProductCard';
 
-const imgPlaceholderImage = '/personal-finance.jpg';
+const corporateRiskImage = '/corporate-risk.png';
+const employeeBenefitsImage = '/employee-benefits.png';
+const personalInsuranceImage = '/personal-insurance.png';
 
 const icon = (
   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 40" fill="none">
@@ -18,21 +20,21 @@ const products = [
     icon: icon,
     title: 'Corporate Risk',
     description: 'Strategic risk management and solutions for every business need',
-    image: imgPlaceholderImage,
+    image: corporateRiskImage,
   },
   {
     icon: icon,
     title: 'Employee Benefits',
     description:
       'We take time to understand the needs and requirements to design a plan that prioritizes your people with tailored care and coverage',
-    image: imgPlaceholderImage,
+    image: employeeBenefitsImage,
   },
   {
     icon: icon,
     title: 'Personal Insurance',
     description:
       'Your dreams, our protection — from home, health, cars, yachts, travel, and beyond',
-    image: imgPlaceholderImage,
+    image: personalInsuranceImage,
   },
 ];
 
@@ -40,8 +42,8 @@ export default function OurProducts() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section className="bg-tertiary-blue-50 w-full flex flex-col items-center py-12 px-4 md:px-16">
-      <div className="flex flex-col items-center gap-4 max-w-2xl w-full text-center mb-20">
+    <section className="bg-tertiary-blue-50 w-full flex flex-col items-center py-12 px-16">
+      <div className="flex flex-col items-center gap-4 w-full text-center mb-20">
         <span className="text-[18px] leading-[21.6px] font-normal text-corporate-grey-900">
           Tailored
         </span>
@@ -52,7 +54,7 @@ export default function OurProducts() {
           Expert solutions to drive your growth
         </p>
       </div>
-      <div className="flex flex-col gap-8 w-full max-w-7xl">
+      <div className="flex flex-col gap-8 w-full">
         <div className="flex flex-row gap-8 w-full">
           {products.map((product, idx) => (
             <ProductCard

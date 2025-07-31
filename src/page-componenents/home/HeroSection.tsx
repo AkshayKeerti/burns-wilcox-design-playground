@@ -1,9 +1,37 @@
 'use client';
 
 import Image from 'next/image';
-import { useRef, useState, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-const images = ['/hero.jpeg', '/hero.jpeg', '/hero.jpeg'];
+const slides = [
+  {
+    image: '/hero-1.jpg',
+    title: 'Your Vision',
+    subtitle: 'Our Commitment to Smarter Protection',
+    description:
+      'At Burns & Wilcox MENA, we leverage over 50 years of global expertise to provide customized insurance solutions that meet the unique needs of your business.',
+    primaryButton: 'Learn More',
+    secondaryButton: 'Get in Touch',
+  },
+  {
+    image: '/hero-2.jpg',
+    title: 'Built on Legacy',
+    subtitle: 'Driven by Expertise',
+    description:
+      'Backed by the trusted legacy of H.W. Kaufman Group and led by a team of seasoned global professionals, we are committed to providing industry-leading risk management and risk transfer solutions to help your business.',
+    primaryButton: 'Learn More',
+    secondaryButton: 'Get in Touch',
+  },
+  {
+    image: '/hero-3.jpg',
+    title: 'Innovation',
+    subtitle: 'That Moves with You',
+    description:
+      'Transcontinental reach, focused innovation, and our cultural understanding ensure that solutions follow you wherever your business takes you, globally.',
+    primaryButton: 'Learn More',
+    secondaryButton: 'Get in Touch',
+  },
+];
 
 const SLIDE_DURATION = 4000; // ms
 
@@ -17,7 +45,7 @@ export default function HeroSection() {
   // Auto-advance
   useEffect(() => {
     intervalRef.current = setInterval(() => {
-      setCurrent(prev => (prev + 1) % images.length);
+      setCurrent(prev => (prev + 1) % slides.length);
     }, SLIDE_DURATION);
     return () => {
       if (intervalRef.current) {
@@ -47,31 +75,43 @@ export default function HeroSection() {
 
   return (
     <section className="relative w-full h-[80vh] overflow-hidden select-none">
-      {/* Overlayed Text Content */}
-      <div className="absolute z-10 top-0 left-0 flex flex-col justify-center h-full w-full px-4 md:px-16 pointer-events-none">
-        <div className="max-w-2xl rounded-lg p-6 md:p-12 flex flex-col gap-8 pointer-events-auto">
-          <div className="flex flex-col gap-6 text-white">
-            <h1 className="font-bold text-3xl md:text-5xl leading-tight md:leading-[1.2]">
-              Your Vision
-              <br />
-              Our Commitment to Smarter Protection
-            </h1>
-            <p className="text-base md:text-lg font-normal text-white/90">
-              At Burns & Wilcox MENA, we leverage over 50 years of global expertise to provide
-              customized insurance solutions that meet the unique needs of your business. Backed by
-              the trusted legacy of the H.W. Kaufman Group and led by a team of seasoned global
-              professionals, we are committed to providing industry-leading risk management and
-              risk-transfer solutions to help your business.
-            </p>
-          </div>
-          <div className="flex gap-4 mt-2">
-            <button className="bg-white text-[#012169] border border-white font-medium px-6 py-3  transition hover:bg-gray-100">
-              Learn More
-            </button>
-            <button className="bg-transparent text-white border border-white font-medium px-6 py-3  transition hover:bg-white hover:text-[#012169]">
-              Get in Touch
-            </button>
-          </div>
+      {/* Overlayed Text Content with Sliding Animation */}
+      <div className="absolute z-10 top-0 left-0 flex flex-col justify-center h-full w-full px-4 md:px-16 pointer-events-none overflow-hidden">
+        <div
+          className="flex transition-transform duration-1000 ease-in-out"
+          style={{
+            transform: `translateX(${-current * 100}%)`,
+            width: `${slides.length * 100}%`,
+          }}
+        >
+          {slides.map((slide, idx) => (
+            <div
+              key={idx}
+              className="min-w-full flex flex-col justify-center"
+              style={{ width: `${100 / slides.length}%` }}
+            >
+              <div className="max-w-2xl rounded-lg flex flex-col gap-8 pointer-events-auto">
+                <div className="flex flex-col gap-6 text-white">
+                  <h1 className="font-bold text-3xl md:text-5xl leading-tight md:leading-[1.2]">
+                    {slide.title}
+                    <br />
+                    {slide.subtitle}
+                  </h1>
+                  <p className="text-base md:text-lg font-normal text-white/90">
+                    {slide.description}
+                  </p>
+                </div>
+                <div className="flex gap-4 mt-2">
+                  <button className="bg-white text-[#012169] border border-white font-medium px-6 py-3 transition hover:bg-gray-100">
+                    {slide.primaryButton}
+                  </button>
+                  <button className="bg-transparent text-white border border-white font-medium px-6 py-3 transition hover:bg-white hover:text-[#012169]">
+                    {slide.secondaryButton}
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       {/* Slideshow Images */}
@@ -82,10 +122,10 @@ export default function HeroSection() {
           transform: `translateX(${-current * 100}%)`,
         }}
       >
-        {images.map((src, idx) => (
+        {slides.map((slide, idx) => (
           <div key={idx} className="min-w-full h-full relative">
             <Image
-              src={src}
+              src={slide.image}
               alt={`Slide ${idx + 1}`}
               fill
               className="object-cover"
@@ -96,7 +136,7 @@ export default function HeroSection() {
       </div>
       {/* Dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10 items-center justify-center">
-        {images.map((_, idx) => (
+        {slides.map((_, idx) => (
           <div
             key={idx}
             className="relative flex items-center justify-center w-12 h-12" // slightly larger container
@@ -141,7 +181,7 @@ export default function HeroSection() {
             >
               {idx === current && (
                 <Image
-                  src={images[idx]}
+                  src={slides[idx].image}
                   className="object-cover w-full h-full absolute top-0 left-0 rounded-full"
                   alt={`Slide ${idx + 1}`}
                   width={160}

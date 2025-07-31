@@ -57,11 +57,11 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="bg-white w-full flex flex-col items-center">
+    <footer className="bg-white w-full flex flex-col items-center px-16">
       {/* Top Divider */}
-      <div className="h-px w-full max-w-7xl my-0 bg-corporate-grey-900 mt-16 mx-16" />
+      <div className="h-px w-full my-0 bg-corporate-grey-900 mt-16" />
       {/* Columns */}
-      <div className="w-full max-w-7xl px-4 md:px-16 py-16 flex flex-col gap-20">
+      <div className="w-full py-16 flex flex-col gap-20">
         <div className="flex flex-col md:flex-row gap-10 md:gap-10 w-full">
           {columns.map(col => (
             <div key={col.title} className="flex-1 min-w-[180px] flex flex-col gap-4">
@@ -81,17 +81,17 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        {/* Bottom Divider */}
-        <div className="h-px w-full max-w-7xl my-0 bg-corporate-grey-900 mt-16 mx-16" />
-        {/* Columns */}
-        {/* Logo and Copyright */}
-        <div className="flex flex-col md:flex-row items-center justify-between w-full gap-6">
-          <div className="flex items-center justify-center h-[38px] w-[94px] bg-center bg-cover">
-            <StackedLogo height={38} width={94} />
-          </div>
-          <div className="text-[14px] leading-[21px] font-normal text-black font-roboto whitespace-pre">
-            © 2025 Burns & Wilcox. All rights reserved.
-          </div>
+      </div>
+      {/* Bottom Divider */}
+      <div className="h-px w-full my-0 bg-corporate-grey-900 mt-16 mx-16" />
+      {/* Columns */}
+      {/* Logo and Copyright */}
+      <div className="flex flex-col md:flex-row items-center justify-between w-full gap-6 pt-8 pb-20">
+        <div className="flex items-center justify-center h-[38px] w-[94px] bg-center bg-cover">
+          <StackedLogo height={38} width={94} />
+        </div>
+        <div className="text-[14px] leading-[21px] font-normal text-black font-roboto whitespace-pre">
+          © 2025 Burns & Wilcox. All rights reserved.
         </div>
       </div>
     </footer>

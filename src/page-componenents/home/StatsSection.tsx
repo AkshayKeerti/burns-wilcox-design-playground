@@ -73,10 +73,10 @@ export default function StatsSection() {
   };
 
   // Create a seamless loop by duplicating the stats array
-  const statsLoop = [...stats, ...stats];
+  const statsLoop = [...stats, ...stats, ...stats];
 
   return (
-    <section className="bg-tertiary-blue-50 w-full flex flex-col items-center py-24 px-4 md:px-16">
+    <section className="bg-tertiary-blue-50 w-full flex flex-col items-center py-24">
       <div className="w-full overflow-hidden">
         <div
           ref={scrollRef}
@@ -127,8 +127,9 @@ export default function StatsSection() {
             transform: translateX(-50%);
           }
         }
+
         .animate-stats-scroll {
-          animation: stats-scroll 15s linear infinite;
+          animation: stats-scroll 30s linear infinite;
         }
       `}</style>
     </section>
