@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import { StackedLogo } from '@/components/logo/Logo';
+import DesignSwitcher from '@/components/DesignSwitcher';
 
 export default function Navbar() {
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
@@ -118,6 +119,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className="flex flex-row gap-4 items-center">
+          <DesignSwitcher />
           <Link
             href="/locations"
             className="font-normal text-[14px] leading-[17px] text-blue-900 border border-blue-900 px-5 py-2 rounded-none hover:bg-blue-50 transition-colors"
@@ -126,7 +128,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/mena"
-            className="font-normal text-[14px] leading-[17px] text-white border border-blue-900 bg-blue-900 px-5 py-2 rounded-none hover:bg-blue-800 transition-colors"
+            className="font-normal text-[14px] leading-[17px] text-white border border-blue-900 bg-blue-900 px-5 py-2 rounded-none hover:bg-blue-50 transition-colors"
           >
             MENA Site
           </Link>

@@ -1,129 +1,189 @@
 'use client';
 
 import Image from 'next/image';
+import { useEffect, useState, useRef } from 'react';
 
-const regions = [
+const slides = [
   {
-    name: 'North America',
-    offices: 25,
     image: '/hero-1.jpg',
-    description: 'Our largest market with comprehensive coverage solutions',
-    specialties: ['Property', 'Casualty', 'Professional Lines']
+    title: 'Global Reach',
+    subtitle: 'Local Expertise',
+    description:
+      'With over 60 offices worldwide and deep regional knowledge, Burns & Wilcox delivers insurance solutions that understand your local market while leveraging global expertise.',
   },
   {
-    name: 'Europe',
-    offices: 18,
     image: '/hero-2.jpg',
-    description: 'Specialized expertise in continental risk management',
-    specialties: ['Marine', 'Aviation', 'Energy']
+    title: 'Worldwide Network',
+    subtitle: 'Unified Solutions',
+    description:
+      'Our international presence enables seamless service delivery across borders, providing consistent risk management solutions wherever your business operates.',
   },
   {
-    name: 'Middle East',
-    offices: 8,
     image: '/hero-3.jpg',
-    description: 'Growing presence in emerging insurance markets',
-    specialties: ['Construction', 'Infrastructure', 'Trade Credit']
+    title: 'Regional Specialization',
+    subtitle: 'Global Standards',
+    description:
+      'Each region brings unique challenges and opportunities. Our local teams combine deep market knowledge with global best practices to deliver exceptional results.',
   },
-  {
-    name: 'Asia Pacific',
-    offices: 12,
-    image: '/hero-1.jpg',
-    description: 'Strategic partnerships across diverse markets',
-    specialties: ['Cyber', 'Technology', 'Manufacturing']
-  }
 ];
 
-export default function GlobalPresenceHero() {
-  return (
-    <section className="bg-gradient-to-br from-corporate-blue-50 via-white to-tertiary-blue-50 w-full py-24 px-8">
-      {/* Header Section */}
-      <div className="max-w-7xl mx-auto text-center mb-20">
-        <div className="inline-flex items-center gap-3 bg-corporate-blue-100 text-corporate-blue-700 px-4 py-2 rounded-full mb-6">
-          <div className="w-2 h-2 bg-corporate-blue-500 rounded-full"></div>
-          <span className="text-sm font-medium">Global Network</span>
-        </div>
-        <h1 className="text-5xl md:text-6xl font-bold text-corporate-grey-900 mb-6 leading-tight">
-          Worldwide Presence,
-          <span className="text-corporate-blue-500"> Local Expertise</span>
-        </h1>
-        <p className="text-xl text-corporate-grey-600 max-w-3xl mx-auto leading-relaxed">
-          With over 60 offices across 4 continents, we deliver insurance solutions that understand your local market while leveraging global expertise and resources.
-        </p>
-      </div>
+const SLIDE_DURATION = 5000; // ms
 
-      {/* Regional Grid */}
-      <div className="max-w-7xl mx-auto mb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {regions.map((region, index) => (
+export default function GlobalPresenceHero() {
+  const [current, setCurrent] = useState(0);
+  const [progress, setProgress] = useState(0);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const progressRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Auto-advance
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setCurrent(prev => (prev + 1) % slides.length);
+    }, SLIDE_DURATION);
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, []);
+
+  // Progress animation
+  useEffect(() => {
+    setProgress(0);
+    if (progressRef.current) clearInterval(progressRef.current);
+    const start = Date.now();
+    progressRef.current = setInterval(() => {
+      const elapsed = Date.now() - start;
+      setProgress(Math.min(elapsed / SLIDE_DURATION, 1));
+    }, 16);
+    return () => {
+      if (progressRef.current) clearInterval(progressRef.current);
+    };
+  }, [current]);
+
+  const RADIUS = 24;
+  const STROKE = 2;
+  const CIRCUM = 2 * Math.PI * RADIUS;
+
+  return (
+    <section className="relative w-full h-[80vh] overflow-hidden select-none">
+      {/* Overlayed Text Content */}
+      <div className="absolute z-10 top-0 left-0 flex flex-col justify-center h-full w-full px-4 md:px-16 pointer-events-none overflow-hidden">
+        <div
+          className="flex transition-transform duration-1000 ease-in-out"
+          style={{
+            transform: `translateX(${-current * 100}%)`,
+            width: `${slides.length * 100}%`,
+          }}
+        >
+          {slides.map((slide, idx) => (
             <div
-              key={region.name}
-              className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+              key={idx}
+              className="min-w-full flex flex-col justify-center"
+              style={{ width: `${100 / slides.length}%` }}
             >
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src={region.image}
-                  alt={region.name}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold mb-1">{region.name}</h3>
-                  <p className="text-sm opacity-90">{region.offices} Offices</p>
+              <div className="max-w-2xl rounded-lg flex flex-col gap-8 pointer-events-auto">
+                <div className="flex flex-col gap-6 text-white">
+                  <h1 className="font-bold text-3xl md:text-5xl leading-tight md:leading-[1.2]">
+                    {slide.title}
+                    <br />
+                    {slide.subtitle}
+                  </h1>
+                  <p className="text-base md:text-lg font-normal text-white/90">
+                    {slide.description}
+                  </p>
                 </div>
-              </div>
-              
-              <div className="p-6">
-                <p className="text-corporate-grey-600 text-sm mb-4 leading-relaxed">
-                  {region.description}
-                </p>
-                
-                <div className="space-y-2 mb-4">
-                  {region.specialties.map((specialty) => (
-                    <span
-                      key={specialty}
-                      className="inline-block bg-corporate-blue-50 text-corporate-blue-700 text-xs px-3 py-1 rounded-full mr-2 mb-2"
-                    >
-                      {specialty}
-                    </span>
-                  ))}
+                <div className="flex gap-4 mt-2">
+                  <button className="bg-white text-[#012169] border border-white font-medium px-6 py-3 transition hover:bg-gray-100">
+                    Explore Regions
+                  </button>
+                  <button className="bg-transparent text-white border border-white font-medium px-6 py-3 transition hover:bg-white hover:text-[#012169]">
+                    Contact Local Team
+                  </button>
                 </div>
-                
-                <button className="w-full bg-corporate-blue-500 text-white py-3 px-4 rounded-lg font-medium hover:bg-corporate-blue-600 transition-colors duration-300 group-hover:bg-corporate-blue-600">
-                  Explore {region.name}
-                </button>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Global Stats */}
-      <div className="max-w-6xl mx-auto">
-        <div className="bg-white rounded-3xl p-12 shadow-xl border border-corporate-grey-100">
-          <h2 className="text-3xl font-bold text-corporate-grey-900 text-center mb-12">
-            Global Impact by the Numbers
-          </h2>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-corporate-blue-500 mb-2">60+</div>
-              <div className="text-corporate-grey-600 font-medium">Global Offices</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-corporate-blue-500 mb-2">2,300+</div>
-              <div className="text-corporate-grey-600 font-medium">Insurance Professionals</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-corporate-blue-500 mb-2">$3.6B+</div>
-              <div className="text-corporate-grey-600 font-medium">Group Premium</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-corporate-blue-500 mb-2">50+</div>
-              <div className="text-corporate-grey-600 font-medium">Years of Excellence</div>
-            </div>
+      {/* Slideshow Images */}
+      <div
+        className="flex h-full transition-transform duration-1000 ease-in-out"
+        style={{
+          transform: `translateX(${-current * 100}%)`,
+        }}
+      >
+        {slides.map((slide, idx) => (
+          <div key={idx} className="min-w-full h-full relative">
+            <Image
+              src={slide.image}
+              alt={`Global Presence Slide ${idx + 1}`}
+              fill
+              className="object-cover"
+              priority={idx === 0}
+            />
           </div>
-        </div>
+        ))}
+      </div>
+
+      {/* Dots */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10 items-center justify-center">
+        {slides.map((_, idx) => (
+          <div
+            key={idx}
+            className="relative flex items-center justify-center w-12 h-12"
+          >
+            {idx === current && (
+              <svg
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                width={2 * (RADIUS + STROKE + 4)}
+                height={2 * (RADIUS + STROKE + 4)}
+              >
+                <circle
+                  cx={RADIUS + STROKE + 4}
+                  cy={RADIUS + STROKE + 4}
+                  r={RADIUS}
+                  stroke="#94a3b8"
+                  strokeWidth={STROKE}
+                  fill="none"
+                  strokeDasharray="6 6"
+                />
+                <circle
+                  cx={RADIUS + STROKE + 4}
+                  cy={RADIUS + STROKE + 4}
+                  r={RADIUS}
+                  stroke="#012169"
+                  strokeWidth={STROKE + 2}
+                  fill="none"
+                  strokeDasharray={CIRCUM}
+                  strokeDashoffset={CIRCUM * (1 - progress)}
+                  style={{ transition: 'stroke-dashoffset 0.1s linear' }}
+                />
+              </svg>
+            )}
+
+            <button
+              className={`rounded-full transition-all duration-300 overflow-hidden flex items-center justify-center relative ${
+                idx === current
+                  ? 'bg-white w-10 h-10'
+                  : 'bg-transparent w-3 h-3 border border-white'
+              }`}
+              onClick={() => setCurrent(idx)}
+              aria-label={`Go to slide ${idx + 1}`}
+            >
+              {idx === current && (
+                <Image
+                  src={slides[idx].image}
+                  className="object-cover w-full h-full absolute top-0 left-0 rounded-full"
+                  alt={`Slide ${idx + 1}`}
+                  width={160}
+                  height={160}
+                />
+              )}
+            </button>
+          </div>
+        ))}
       </div>
     </section>
   );
