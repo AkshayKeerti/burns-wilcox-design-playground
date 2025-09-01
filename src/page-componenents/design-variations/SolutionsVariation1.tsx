@@ -35,5 +35,5 @@ export default function SolutionsVariation1() {
         ))}
       </div>
     </section>
-  
+  );
 }
