@@ -36,4 +36,5 @@ export default function SolutionsVariation3() {
         </ul>
       </div>
     </section>
-  
+  );
+}
