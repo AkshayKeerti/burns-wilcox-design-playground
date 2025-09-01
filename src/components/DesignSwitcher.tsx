@@ -40,6 +40,12 @@ const designOptions: DesignOption[] = [
     name: 'Design Variation 4',
     description: 'Bold & contemporary layouts',
     path: '/design-4'
+  },
+  {
+    id: 'variation-5',
+    name: 'Design Variation 5',
+    description: 'Insights-led & editorial layouts',
+    path: '/design-5'
   }
 ];
 
@@ -54,12 +60,10 @@ export default function DesignSwitcher() {
     setIsOpen(false);
     
     if (designPath) {
-      // For design variations, redirect to the variation route
-      const currentPath = pathname.replace(/\/design-[1-4]/, '');
+      const currentPath = pathname.replace(/\/design-[1-5]/, '');
       router.push(`${designPath}${currentPath}`);
     } else {
-      // For original design, remove design prefix
-      const cleanPath = pathname.replace(/\/design-[1-4]/, '');
+      const cleanPath = pathname.replace(/\/design-[1-5]/, '');
       router.push(cleanPath);
     }
   };
