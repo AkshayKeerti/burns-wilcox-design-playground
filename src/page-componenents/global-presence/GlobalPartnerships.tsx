@@ -14,7 +14,8 @@ const partnerships = [
   },
   {
     name: 'Local Market Partners',
-    description: 'Regional partnerships that provide deep market knowledge and regulatory expertise',
+    description:
+      'Regional partnerships that provide deep market knowledge and regulatory expertise',
     benefits: [
       'Local market intelligence',
       'Regulatory compliance support',
@@ -52,7 +53,7 @@ export default function GlobalPartnerships() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full max-w-7xl mb-16">
-        {partnerships.map((partnership, idx) => (
+        {partnerships.map(partnership => (
           <div
             key={partnership.name}
             className="bg-tertiary-blue-50 border border-corporate-grey-100 p-6 hover:shadow-lg transition-all duration-300"
@@ -89,11 +90,11 @@ export default function GlobalPartnerships() {
       </div>
 
       <div className="bg-corporate-blue-500 text-white p-12 max-w-6xl text-center">
-        <h3 className="text-[33px] leading-[40px] font-medium mb-6">
-          Building Stronger Together
-        </h3>
+        <h3 className="text-[33px] leading-[40px] font-medium mb-6">Building Stronger Together</h3>
         <p className="text-[18px] leading-[27px] mb-8 max-w-4xl mx-auto">
-          Our global partnerships enable us to deliver comprehensive insurance solutions that combine international expertise with local market knowledge, ensuring our clients receive the best possible coverage and service.
+          Our global partnerships enable us to deliver comprehensive insurance solutions that
+          combine international expertise with local market knowledge, ensuring our clients receive
+          the best possible coverage and service.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-white text-corporate-blue-500 px-8 py-4 font-medium hover:bg-gray-100 transition-colors">

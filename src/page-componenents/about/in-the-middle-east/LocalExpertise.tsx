@@ -24,10 +24,14 @@ export default function LocalExpertise() {
                 Understanding Local Markets
               </h3>
               <p className="text-[18px] leading-[27px] text-corporate-grey-700 mb-4">
-                Our deep understanding of Middle Eastern business practices, regulatory environments, and cultural nuances enables us to deliver insurance solutions that truly meet local needs.
+                Our deep understanding of Middle Eastern business practices, regulatory
+                environments, and cultural nuances enables us to deliver insurance solutions that
+                truly meet local needs.
               </p>
               <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-4">
-                From Islamic finance compliance and energy sector specialization to construction projects and regulatory requirements, we bring expertise that understands the unique challenges of the region.
+                From Islamic finance compliance and energy sector specialization to construction
+                projects and regulatory requirements, we bring expertise that understands the unique
+                challenges of the region.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <div className="flex items-start gap-3">
@@ -89,7 +93,8 @@ export default function LocalExpertise() {
           </div>
           <div className="text-center">
             <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-2">
-              "Digital transformation is driving 40% of new insurance product development in the region"
+              "Digital transformation is driving 40% of new insurance product development in the
+              region"
             </p>
             <span className="text-[12px] leading-[16px] text-corporate-grey-500">
               — Regional Insurance Survey
@@ -115,7 +120,8 @@ export default function LocalExpertise() {
           <div>
             <h4 className="text-[20px] leading-[24px] font-medium mb-3">Local Knowledge</h4>
             <p className="text-[14px] leading-[20px] text-white/90">
-              Deep understanding of local business practices, cultural nuances, and regulatory environments
+              Deep understanding of local business practices, cultural nuances, and regulatory
+              environments
             </p>
           </div>
           <div>

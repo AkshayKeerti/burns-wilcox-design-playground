@@ -4,7 +4,8 @@ const timelineEvents = [
   {
     year: '1969',
     title: 'Company Founded',
-    description: 'Burns & Wilcox was established in Detroit, Michigan, by H. William Kaufman, beginning with a vision to provide exceptional insurance brokerage services.',
+    description:
+      'Burns & Wilcox was established in Detroit, Michigan, by H. William Kaufman, beginning with a vision to provide exceptional insurance brokerage services.',
     location: 'Detroit, Michigan',
     significance: 'Foundation',
     image: '/hero-1.jpg',
@@ -12,7 +13,8 @@ const timelineEvents = [
   {
     year: '1975',
     title: 'First Expansion',
-    description: 'Expanded operations beyond Michigan, establishing presence in neighboring states and building regional expertise.',
+    description:
+      'Expanded operations beyond Michigan, establishing presence in neighboring states and building regional expertise.',
     location: 'Midwest Region',
     significance: 'Growth',
     image: '/hero-2.jpg',
@@ -20,7 +22,8 @@ const timelineEvents = [
   {
     year: '1985',
     title: 'National Presence',
-    description: 'Achieved nationwide coverage with offices across the United States, becoming a recognized national insurance broker.',
+    description:
+      'Achieved nationwide coverage with offices across the United States, becoming a recognized national insurance broker.',
     location: 'United States',
     significance: 'Expansion',
     image: '/hero-3.jpg',
@@ -28,7 +31,8 @@ const timelineEvents = [
   {
     year: '1995',
     title: 'International Expansion',
-    description: 'Entered international markets, beginning with Canada and establishing global insurance capabilities.',
+    description:
+      'Entered international markets, beginning with Canada and establishing global insurance capabilities.',
     location: 'North America',
     significance: 'Global',
     image: '/hero-1.jpg',
@@ -36,7 +40,8 @@ const timelineEvents = [
   {
     year: '2003',
     title: 'Middle East Entry',
-    description: 'Established first presence in the Middle East with office in Dubai, marking the beginning of regional operations.',
+    description:
+      'Established first presence in the Middle East with office in Dubai, marking the beginning of regional operations.',
     location: 'Dubai, UAE',
     significance: 'Regional',
     image: '/hero-2.jpg',
@@ -44,7 +49,8 @@ const timelineEvents = [
   {
     year: '2010',
     title: 'European Expansion',
-    description: 'Expanded into European markets, establishing offices in key financial centers and building continental expertise.',
+    description:
+      'Expanded into European markets, establishing offices in key financial centers and building continental expertise.',
     location: 'Europe',
     significance: 'Continental',
     image: '/hero-3.jpg',
@@ -52,7 +58,8 @@ const timelineEvents = [
   {
     year: '2015',
     title: 'Digital Transformation',
-    description: 'Launched comprehensive digital platforms and technology solutions, revolutionizing how we serve clients.',
+    description:
+      'Launched comprehensive digital platforms and technology solutions, revolutionizing how we serve clients.',
     location: 'Global',
     significance: 'Innovation',
     image: '/hero-1.jpg',
@@ -60,7 +67,8 @@ const timelineEvents = [
   {
     year: '2020',
     title: 'Global Leadership',
-    description: 'Achieved position as one of the world\'s leading insurance brokers with presence in over 25 countries.',
+    description:
+      "Achieved position as one of the world's leading insurance brokers with presence in over 25 countries.",
     location: 'Worldwide',
     significance: 'Leadership',
     image: '/hero-2.jpg',
@@ -68,7 +76,8 @@ const timelineEvents = [
   {
     year: '2024',
     title: 'Future Forward',
-    description: 'Continuing to innovate and expand, embracing new technologies and markets while maintaining our core values.',
+    description:
+      'Continuing to innovate and expand, embracing new technologies and markets while maintaining our core values.',
     location: 'Global',
     significance: 'Innovation',
     image: '/hero-3.jpg',
@@ -94,7 +103,7 @@ export default function Timeline() {
         <div className="relative">
           {/* Timeline Line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-corporate-blue-200 h-full hidden lg:block"></div>
-          
+
           {timelineEvents.map((event, idx) => (
             <div
               key={event.year}
@@ -147,11 +156,10 @@ export default function Timeline() {
       </div>
 
       <div className="bg-corporate-blue-500 text-white p-12 max-w-6xl text-center mt-16">
-        <h3 className="text-[33px] leading-[40px] font-medium mb-6">
-          A Legacy of Excellence
-        </h3>
+        <h3 className="text-[33px] leading-[40px] font-medium mb-6">A Legacy of Excellence</h3>
         <p className="text-[18px] leading-[27px] mb-8 max-w-4xl mx-auto">
-          From our founding in 1969 to today, Burns & Wilcox has remained committed to the same principles: integrity, excellence, and unwavering dedication to our clients' success.
+          From our founding in 1969 to today, Burns & Wilcox has remained committed to the same
+          principles: integrity, excellence, and unwavering dedication to our clients' success.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-white text-corporate-blue-500 px-8 py-4 font-medium hover:bg-gray-100 transition-colors">

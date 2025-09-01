@@ -108,7 +108,7 @@ export default function Milestones() {
       {/* Milestones Grid */}
       <div className="w-full max-w-7xl mb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {milestones.map((milestone) => (
+          {milestones.map(milestone => (
             <div
               key={milestone.year}
               className="bg-white border border-corporate-grey-100 p-6 hover:shadow-lg transition-all duration-300"
@@ -151,7 +151,7 @@ export default function Milestones() {
           By the Numbers
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {achievements.map((achievement) => (
+          {achievements.map(achievement => (
             <div
               key={achievement.label}
               className="bg-white border border-corporate-grey-100 p-6 text-center hover:shadow-lg transition-all duration-300"
@@ -179,18 +179,21 @@ export default function Milestones() {
           <div>
             <h4 className="text-[20px] leading-[24px] font-medium mb-3">Our Heritage</h4>
             <p className="text-[14px] leading-[20px] text-white/90">
-              Founded on principles of integrity, excellence, and client service that continue to guide us today
+              Founded on principles of integrity, excellence, and client service that continue to
+              guide us today
             </p>
           </div>
           <div>
             <h4 className="text-[20px] leading-[24px] font-medium mb-3">Our Future</h4>
             <p className="text-[14px] leading-[20px] text-white/90">
-              Embracing innovation and technology while maintaining the values that made us successful
+              Embracing innovation and technology while maintaining the values that made us
+              successful
             </p>
           </div>
         </div>
         <p className="text-[18px] leading-[27px] mb-8 max-w-4xl mx-auto">
-          Each milestone represents not just growth, but our commitment to serving clients better and advancing the insurance industry.
+          Each milestone represents not just growth, but our commitment to serving clients better
+          and advancing the insurance industry.
         </p>
         <button className="bg-white text-corporate-blue-500 px-8 py-4 font-medium hover:bg-gray-100 transition-colors">
           Learn About Our Future Plans

@@ -7,7 +7,7 @@ const regionalStats = [
   { number: '20+', label: 'Years in Region', icon: '📅' },
   { number: '8', label: 'Regional Offices', icon: '🏢' },
   { number: '500+', label: 'Local Partners', icon: '🤝' },
-  { number: '15+', label: 'Insurance Lines', icon: '🛡️' }
+  { number: '15+', label: 'Insurance Lines', icon: '🛡️' },
 ];
 
 const regionalServices = [
@@ -15,26 +15,26 @@ const regionalServices = [
     title: 'Property & Casualty',
     description: 'Comprehensive coverage for businesses and individuals across the region',
     icon: '🏗️',
-    color: 'border-blue-500'
+    color: 'border-blue-500',
   },
   {
     title: 'Energy & Construction',
-    description: 'Specialized solutions for the region\'s growing infrastructure sector',
+    description: "Specialized solutions for the region's growing infrastructure sector",
     icon: '⚡',
-    color: 'border-green-500'
+    color: 'border-green-500',
   },
   {
     title: 'Trade & Logistics',
-    description: 'Coverage for the region\'s vital international trade operations',
+    description: "Coverage for the region's vital international trade operations",
     icon: '🚢',
-    color: 'border-purple-500'
+    color: 'border-purple-500',
   },
   {
     title: 'Cyber & Technology',
-    description: 'Modern protection for the region\'s digital transformation',
+    description: "Modern protection for the region's digital transformation",
     icon: '💻',
-    color: 'border-orange-500'
-  }
+    color: 'border-orange-500',
+  },
 ];
 
 export default function InTheMiddleEastVariation2() {
@@ -54,24 +54,25 @@ export default function InTheMiddleEastVariation2() {
           />
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
-        
+
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-8">
           <div className="mb-12">
             <div className="inline-block border-b-2 border-white/30 pb-2 mb-8">
               <span className="text-sm font-light tracking-widest uppercase">Regional Focus</span>
             </div>
-            
+
             <h1 className="text-5xl md:text-6xl font-light mb-8 leading-tight">
               Burns & Wilcox
               <br />
               <span className="font-normal">in the Middle East</span>
             </h1>
-            
+
             <p className="text-lg md:text-xl font-light text-white/80 max-w-2xl mx-auto leading-relaxed mb-8">
-              Deeply rooted in the region with over two decades of experience serving the unique insurance needs of Middle Eastern businesses and individuals
+              Deeply rooted in the region with over two decades of experience serving the unique
+              insurance needs of Middle Eastern businesses and individuals
             </p>
           </div>
-          
+
           <div className="flex flex-wrap justify-center gap-6">
             <button className="px-8 py-3 bg-white text-corporate-blue-900 font-light rounded-none hover:bg-corporate-grey-50 transition-all duration-300 border border-white">
               Explore Our Presence
@@ -90,8 +91,12 @@ export default function InTheMiddleEastVariation2() {
             {regionalStats.map((stat, index) => (
               <div key={stat.label} className="text-center">
                 <div className="text-4xl mb-4 text-corporate-grey-400">{stat.icon}</div>
-                <div className="text-3xl font-light text-corporate-grey-900 mb-2">{stat.number}</div>
-                <div className="text-sm text-corporate-grey-500 uppercase tracking-widest">{stat.label}</div>
+                <div className="text-3xl font-light text-corporate-grey-900 mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-sm text-corporate-grey-500 uppercase tracking-widest">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -110,7 +115,7 @@ export default function InTheMiddleEastVariation2() {
               Comprehensive insurance solutions tailored to the Middle East market
             </p>
           </div>
-          
+
           <div className="space-y-8">
             {regionalServices.map((service, index) => (
               <div
@@ -121,16 +126,12 @@ export default function InTheMiddleEastVariation2() {
                 onClick={() => setActiveService(index)}
               >
                 <div className="flex items-start gap-6">
-                  <div className="text-3xl text-corporate-grey-400">
-                    {service.icon}
-                  </div>
+                  <div className="text-3xl text-corporate-grey-400">{service.icon}</div>
                   <div className="flex-1">
                     <h3 className="text-xl font-light text-corporate-grey-900 mb-3">
                       {service.title}
                     </h3>
-                    <p className="text-corporate-grey-600 leading-relaxed">
-                      {service.description}
-                    </p>
+                    <p className="text-corporate-grey-600 leading-relaxed">{service.description}</p>
                   </div>
                 </div>
               </div>

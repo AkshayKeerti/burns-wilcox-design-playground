@@ -7,34 +7,35 @@ const leadershipStats = [
   { number: '25+', label: 'Years Combined Experience', icon: '👨‍💼' },
   { number: '15+', label: 'Leadership Roles', icon: '🎯' },
   { number: '100+', label: 'Team Members Led', icon: '👥' },
-  { number: '50+', label: 'Industry Awards', icon: '🏆' }
+  { number: '50+', label: 'Industry Awards', icon: '🏆' },
 ];
 
 const coreValues = [
   {
     title: 'Integrity',
-    description: 'Building trust through honest, transparent relationships with clients and partners',
+    description:
+      'Building trust through honest, transparent relationships with clients and partners',
     icon: '🤝',
-    color: 'border-blue-500'
+    color: 'border-blue-500',
   },
   {
     title: 'Innovation',
     description: 'Continuously evolving our solutions to meet changing market needs',
     icon: '💡',
-    color: 'border-green-500'
+    color: 'border-green-500',
   },
   {
     title: 'Excellence',
     description: 'Delivering exceptional service and results in everything we do',
     icon: '⭐',
-    color: 'border-purple-500'
+    color: 'border-purple-500',
   },
   {
     title: 'Collaboration',
     description: 'Working together to achieve the best outcomes for our clients',
     icon: '🤲',
-    color: 'border-orange-500'
-  }
+    color: 'border-orange-500',
+  },
 ];
 
 export default function LeadersVisionVariation2() {
@@ -45,31 +46,25 @@ export default function LeadersVisionVariation2() {
       {/* Minimalist Hero Section */}
       <div className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <Image
-            src="/hero-2.jpg"
-            alt="Leaders & Vision"
-            fill
-            className="object-cover"
-            priority
-          />
+          <Image src="/hero-2.jpg" alt="Leaders & Vision" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
-        
+
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-8">
           <div className="mb-12">
             <div className="inline-block border-b-2 border-white/30 pb-2 mb-8">
               <span className="text-sm font-light tracking-widest uppercase">Leadership</span>
             </div>
-            
+
             <h1 className="text-5xl md:text-6xl font-light mb-8 leading-tight">
               Leaders & <span className="font-normal">Vision</span>
             </h1>
-            
+
             <p className="text-lg md:text-xl font-light text-white/80 max-w-2xl mx-auto leading-relaxed mb-8">
               Guided by experienced leaders with a clear vision for the future of insurance
             </p>
           </div>
-          
+
           <div className="flex flex-wrap justify-center gap-6">
             <button className="px-8 py-3 bg-white text-corporate-blue-900 font-light rounded-none hover:bg-corporate-grey-50 transition-all duration-300 border border-white">
               Meet Our Team
@@ -88,8 +83,12 @@ export default function LeadersVisionVariation2() {
             {leadershipStats.map((stat, index) => (
               <div key={stat.label} className="text-center">
                 <div className="text-4xl mb-4 text-corporate-grey-400">{stat.icon}</div>
-                <div className="text-3xl font-light text-corporate-grey-900 mb-2">{stat.number}</div>
-                <div className="text-sm text-corporate-grey-500 uppercase tracking-widest">{stat.label}</div>
+                <div className="text-3xl font-light text-corporate-grey-900 mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-sm text-corporate-grey-500 uppercase tracking-widest">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -108,7 +107,7 @@ export default function LeadersVisionVariation2() {
               The principles that guide our decisions and shape our culture
             </p>
           </div>
-          
+
           <div className="space-y-8">
             {coreValues.map((value, index) => (
               <div
@@ -119,16 +118,12 @@ export default function LeadersVisionVariation2() {
                 onClick={() => setActiveValue(index)}
               >
                 <div className="flex items-start gap-6">
-                  <div className="text-3xl text-corporate-grey-400">
-                    {value.icon}
-                  </div>
+                  <div className="text-3xl text-corporate-grey-400">{value.icon}</div>
                   <div className="flex-1">
                     <h3 className="text-xl font-light text-corporate-grey-900 mb-3">
                       {value.title}
                     </h3>
-                    <p className="text-corporate-grey-600 leading-relaxed">
-                      {value.description}
-                    </p>
+                    <p className="text-corporate-grey-600 leading-relaxed">{value.description}</p>
                   </div>
                 </div>
               </div>

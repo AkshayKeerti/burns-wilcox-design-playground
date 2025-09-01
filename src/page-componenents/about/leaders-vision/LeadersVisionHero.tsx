@@ -26,7 +26,8 @@ export default function LeadersVisionHero() {
               Leaders & Vision
             </h1>
             <p className="text-xl md:text-2xl font-normal text-white/90 max-w-3xl">
-              Meet the visionary leaders who guide our company and discover the strategic vision that drives our future growth and success
+              Meet the visionary leaders who guide our company and discover the strategic vision
+              that drives our future growth and success
             </p>
           </div>
           <div className="flex gap-4 mt-8">

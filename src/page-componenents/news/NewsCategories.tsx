@@ -1,13 +1,15 @@
 const categories = [
   {
     name: 'Company News',
-    description: 'Latest updates about Burns & Wilcox MENA operations, expansions, and achievements',
+    description:
+      'Latest updates about Burns & Wilcox MENA operations, expansions, and achievements',
     count: 24,
     color: 'bg-corporate-blue-500',
   },
   {
     name: 'Industry Insights',
-    description: 'Expert analysis and thought leadership on insurance trends and market developments',
+    description:
+      'Expert analysis and thought leadership on insurance trends and market developments',
     count: 18,
     color: 'bg-corporate-grey-700',
   },
@@ -19,7 +21,8 @@ const categories = [
   },
   {
     name: 'Regulatory',
-    description: 'Important updates on insurance regulations, compliance requirements, and legal changes',
+    description:
+      'Important updates on insurance regulations, compliance requirements, and legal changes',
     count: 15,
     color: 'bg-corporate-grey-600',
   },
@@ -53,7 +56,7 @@ export default function NewsCategories() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mb-16">
-        {categories.map((category) => (
+        {categories.map(category => (
           <div
             key={category.name}
             className="bg-white border border-corporate-grey-100 p-6 hover:shadow-lg transition-all duration-300 cursor-pointer group"
@@ -82,7 +85,8 @@ export default function NewsCategories() {
           Stay Updated
         </h3>
         <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-6">
-          Subscribe to our newsletter to receive the latest news, insights, and event updates directly in your inbox.
+          Subscribe to our newsletter to receive the latest news, insights, and event updates
+          directly in your inbox.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <input

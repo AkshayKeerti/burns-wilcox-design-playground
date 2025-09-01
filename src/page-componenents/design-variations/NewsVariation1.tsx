@@ -6,33 +6,36 @@ const featuredNews = [
   {
     id: 1,
     title: 'Burns & Wilcox Expands European Operations with New London Office',
-    excerpt: 'Strategic expansion strengthens our presence in key European markets, offering enhanced risk management solutions for international clients.',
+    excerpt:
+      'Strategic expansion strengthens our presence in key European markets, offering enhanced risk management solutions for international clients.',
     category: 'Company News',
     date: 'December 15, 2024',
     readTime: '5 min read',
     image: '/hero-1.jpg',
-    featured: true
+    featured: true,
   },
   {
     id: 2,
     title: 'New Cyber Insurance Solutions Address Emerging Digital Threats',
-    excerpt: 'Comprehensive coverage options designed to protect businesses from evolving cybersecurity risks and data breach incidents.',
+    excerpt:
+      'Comprehensive coverage options designed to protect businesses from evolving cybersecurity risks and data breach incidents.',
     category: 'Product Updates',
     date: 'December 12, 2024',
     readTime: '3 min read',
     image: '/hero-2.jpg',
-    featured: false
+    featured: false,
   },
   {
     id: 3,
     title: 'Industry Recognition: Top 10 Global Insurance Broker 2024',
-    excerpt: 'Continued excellence in client service and innovative solutions earns Burns & Wilcox prestigious industry recognition.',
+    excerpt:
+      'Continued excellence in client service and innovative solutions earns Burns & Wilcox prestigious industry recognition.',
     category: 'Awards',
     date: 'December 10, 2024',
     readTime: '4 min read',
     image: '/hero-3.jpg',
-    featured: false
-  }
+    featured: false,
+  },
 ];
 
 const trendingTopics = [
@@ -41,7 +44,7 @@ const trendingTopics = [
   'Supply Chain Insurance',
   'ESG Compliance',
   'Cyber Security',
-  'Remote Work Coverage'
+  'Remote Work Coverage',
 ];
 
 export default function NewsVariation1() {
@@ -52,7 +55,11 @@ export default function NewsVariation1() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-corporate-blue-50 text-corporate-blue-700 px-4 py-2 rounded-full mb-6">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+              <path
+                fillRule="evenodd"
+                d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                clipRule="evenodd"
+              />
             </svg>
             <span className="text-sm font-medium">Latest Updates</span>
           </div>
@@ -60,7 +67,8 @@ export default function NewsVariation1() {
             News & <span className="text-corporate-blue-500">Insights</span>
           </h1>
           <p className="text-xl text-corporate-grey-600 max-w-2xl mx-auto">
-            Stay informed with the latest industry trends, company updates, and expert insights from Burns & Wilcox.
+            Stay informed with the latest industry trends, company updates, and expert insights from
+            Burns & Wilcox.
           </p>
         </div>
 
@@ -101,8 +109,11 @@ export default function NewsVariation1() {
 
           {/* Sidebar Articles */}
           <div className="space-y-6">
-            {featuredNews.slice(1).map((article) => (
-              <div key={article.id} className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+            {featuredNews.slice(1).map(article => (
+              <div
+                key={article.id}
+                className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              >
                 <div className="relative h-32 overflow-hidden">
                   <Image
                     src={article.image}
@@ -139,7 +150,7 @@ export default function NewsVariation1() {
             Trending Topics
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {trendingTopics.map((topic) => (
+            {trendingTopics.map(topic => (
               <button
                 key={topic}
                 className="bg-white text-corporate-grey-700 px-4 py-2 rounded-full border border-corporate-grey-200 hover:border-corporate-blue-300 hover:text-corporate-blue-600 transition-all duration-300 hover:shadow-md"
@@ -154,7 +165,8 @@ export default function NewsVariation1() {
         <div className="mt-16 bg-corporate-blue-500 rounded-2xl p-8 text-center text-white">
           <h3 className="text-2xl font-bold mb-4">Stay Updated</h3>
           <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
-            Get the latest news and insights delivered directly to your inbox. Never miss an important update.
+            Get the latest news and insights delivered directly to your inbox. Never miss an
+            important update.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input

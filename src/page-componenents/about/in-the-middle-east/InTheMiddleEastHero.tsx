@@ -24,11 +24,12 @@ export default function InTheMiddleEastHero() {
             </span>
             <h1 className="font-bold text-4xl md:text-6xl leading-tight md:leading-[1.1]">
               Burns & Wilcox
-                  <br />
-                  in the Middle East
+              <br />
+              in the Middle East
             </h1>
             <p className="text-xl md:text-2xl font-normal text-white/90 max-w-3xl">
-              Deeply rooted in the region with over two decades of experience serving the unique insurance needs of Middle Eastern businesses and individuals
+              Deeply rooted in the region with over two decades of experience serving the unique
+              insurance needs of Middle Eastern businesses and individuals
             </p>
           </div>
           <div className="flex gap-4 mt-8">

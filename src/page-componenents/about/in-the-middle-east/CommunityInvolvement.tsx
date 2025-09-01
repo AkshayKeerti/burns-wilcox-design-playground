@@ -24,10 +24,14 @@ export default function CommunityInvolvement() {
                 Our Regional Commitment
               </h3>
               <p className="text-[18px] leading-[27px] text-corporate-grey-700 mb-4">
-                Beyond providing insurance solutions, we're committed to supporting the growth and development of the Middle East region through various community initiatives and partnerships.
+                Beyond providing insurance solutions, we're committed to supporting the growth and
+                development of the Middle East region through various community initiatives and
+                partnerships.
               </p>
               <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-4">
-                From education and training programs to economic development support and sustainability initiatives, we work to create lasting positive impact in the communities we serve.
+                From education and training programs to economic development support and
+                sustainability initiatives, we work to create lasting positive impact in the
+                communities we serve.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <div className="flex items-start gap-3">
@@ -132,9 +136,7 @@ export default function CommunityInvolvement() {
 
       {/* Impact Statistics */}
       <div className="bg-corporate-blue-500 text-white p-12 max-w-6xl text-center mb-16">
-        <h3 className="text-[33px] leading-[40px] font-medium mb-8">
-          Our Regional Impact
-        </h3>
+        <h3 className="text-[33px] leading-[40px] font-medium mb-8">Our Regional Impact</h3>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="text-4xl font-bold mb-2">20+</div>
@@ -154,7 +156,8 @@ export default function CommunityInvolvement() {
           </div>
         </div>
         <p className="text-[18px] leading-[27px] mb-8 max-w-4xl mx-auto">
-          Through our commitment to the Middle East, we've built lasting relationships and contributed to the region's growth and development.
+          Through our commitment to the Middle East, we've built lasting relationships and
+          contributed to the region's growth and development.
         </p>
         <button className="bg-white text-corporate-blue-500 px-8 py-4 font-medium hover:bg-gray-100 transition-colors">
           Join Our Community Initiatives
@@ -167,7 +170,8 @@ export default function CommunityInvolvement() {
           Be Part of Our Regional Journey
         </h3>
         <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-6">
-          Whether you're looking for insurance solutions, partnership opportunities, or ways to contribute to regional development, we'd love to hear from you.
+          Whether you're looking for insurance solutions, partnership opportunities, or ways to
+          contribute to regional development, we'd love to hear from you.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-corporate-blue-500 text-white px-8 py-4 font-medium hover:bg-corporate-blue-600 transition-colors">

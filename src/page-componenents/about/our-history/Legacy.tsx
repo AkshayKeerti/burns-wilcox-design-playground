@@ -2,8 +2,9 @@ import Image from 'next/image';
 
 const legacyElements = [
   {
-    title: 'Founder\'s Vision',
-    description: 'H. William Kaufman\'s original vision of providing exceptional insurance services with integrity and excellence continues to guide our company today.',
+    title: "Founder's Vision",
+    description:
+      "H. William Kaufman's original vision of providing exceptional insurance services with integrity and excellence continues to guide our company today.",
     quote: '"We succeed when our clients succeed. Their success is our success."',
     author: 'H. William Kaufman',
     role: 'Founder',
@@ -11,16 +12,20 @@ const legacyElements = [
   },
   {
     title: 'Client-Centric Approach',
-    description: 'For over 50 years, we\'ve maintained an unwavering focus on understanding and meeting our clients\' unique insurance needs.',
-    quote: '"Every client is unique, and every solution should be tailored to their specific requirements."',
+    description:
+      "For over 50 years, we've maintained an unwavering focus on understanding and meeting our clients' unique insurance needs.",
+    quote:
+      '"Every client is unique, and every solution should be tailored to their specific requirements."',
     author: 'Company Philosophy',
     role: 'Core Value',
     image: '/hero-2.jpg',
   },
   {
     title: 'Innovation & Adaptation',
-    description: 'Throughout our history, we\'ve consistently embraced new technologies and approaches to better serve our clients.',
-    quote: '"Innovation isn\'t just about technology—it\'s about finding better ways to protect what matters most."',
+    description:
+      "Throughout our history, we've consistently embraced new technologies and approaches to better serve our clients.",
+    quote:
+      '"Innovation isn\'t just about technology—it\'s about finding better ways to protect what matters most."',
     author: 'Leadership Team',
     role: 'Strategic Focus',
     image: '/hero-3.jpg',
@@ -30,32 +35,38 @@ const legacyElements = [
 const values = [
   {
     value: 'Integrity',
-    description: 'Operating with honesty, transparency, and ethical behavior in all our interactions',
+    description:
+      'Operating with honesty, transparency, and ethical behavior in all our interactions',
     icon: '🤝',
   },
   {
     value: 'Excellence',
-    description: 'Striving for the highest standards in everything we do, from client service to professional development',
+    description:
+      'Striving for the highest standards in everything we do, from client service to professional development',
     icon: '⭐',
   },
   {
     value: 'Innovation',
-    description: 'Embracing new ideas and technologies to continuously improve our services and solutions',
+    description:
+      'Embracing new ideas and technologies to continuously improve our services and solutions',
     icon: '🚀',
   },
   {
     value: 'Client Focus',
-    description: 'Putting our clients\' needs first and building long-term relationships based on trust and results',
+    description:
+      "Putting our clients' needs first and building long-term relationships based on trust and results",
     icon: '🎯',
   },
   {
     value: 'Global Perspective',
-    description: 'Leveraging worldwide expertise while maintaining local market knowledge and cultural sensitivity',
+    description:
+      'Leveraging worldwide expertise while maintaining local market knowledge and cultural sensitivity',
     icon: '🌍',
   },
   {
     value: 'Sustainability',
-    description: 'Building a business that creates long-term value for all stakeholders and communities',
+    description:
+      'Building a business that creates long-term value for all stakeholders and communities',
     icon: '🌱',
   },
 ];
@@ -123,7 +134,7 @@ export default function Legacy() {
           Core Values That Endure
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {values.map((value) => (
+          {values.map(value => (
             <div
               key={value.value}
               className="bg-tertiary-blue-50 border border-corporate-grey-100 p-6 text-center hover:shadow-lg transition-all duration-300"
@@ -142,9 +153,7 @@ export default function Legacy() {
 
       {/* Impact & Future */}
       <div className="bg-corporate-blue-500 text-white p-12 max-w-6xl text-center mb-16">
-        <h3 className="text-[33px] leading-[40px] font-medium mb-6">
-          Our Enduring Impact
-        </h3>
+        <h3 className="text-[33px] leading-[40px] font-medium mb-6">Our Enduring Impact</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <h4 className="text-[20px] leading-[24px] font-medium mb-3">Industry Leadership</h4>
@@ -166,7 +175,9 @@ export default function Legacy() {
           </div>
         </div>
         <p className="text-[18px] leading-[27px] mb-8 max-w-4xl mx-auto">
-          Our legacy is not just about what we\'ve accomplished, but about the foundation we\'ve built for future generations of insurance professionals and the continued success of our clients.
+          Our legacy is not just about what we\'ve accomplished, but about the foundation we\'ve
+          built for future generations of insurance professionals and the continued success of our
+          clients.
         </p>
         <button className="bg-white text-corporate-blue-500 px-8 py-4 font-medium hover:bg-gray-100 transition-colors">
           Join Our Legacy
@@ -179,7 +190,8 @@ export default function Legacy() {
           Be Part of Our Continuing Story
         </h3>
         <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-6">
-          Whether you\'re a client, partner, or team member, you\'re part of the Burns & Wilcox legacy. Together, we\'re building the future of insurance.
+          Whether you\'re a client, partner, or team member, you\'re part of the Burns & Wilcox
+          legacy. Together, we\'re building the future of insurance.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-corporate-blue-500 text-white px-8 py-4 font-medium hover:bg-corporate-blue-600 transition-colors">

@@ -8,7 +8,8 @@ const events = [
     time: '9:00 AM - 5:00 PM',
     location: 'Dubai World Trade Centre',
     type: 'Conference',
-    description: 'Join industry leaders for three days of insights, networking, and discussions on the future of insurance in the MENA region.',
+    description:
+      'Join industry leaders for three days of insights, networking, and discussions on the future of insurance in the MENA region.',
     status: 'Upcoming',
     image: '/hero-1.jpg',
   },
@@ -19,7 +20,8 @@ const events = [
     time: '2:00 PM - 3:30 PM',
     location: 'Virtual Event',
     type: 'Webinar',
-    description: 'Expert insights on emerging cyber threats and effective risk management strategies for MENA businesses.',
+    description:
+      'Expert insights on emerging cyber threats and effective risk management strategies for MENA businesses.',
     status: 'Upcoming',
     image: '/hero-2.jpg',
   },
@@ -30,7 +32,8 @@ const events = [
     time: '10:00 AM - 12:00 PM',
     location: 'Abu Dhabi Business Center',
     type: 'Workshop',
-    description: 'Interactive session on designing competitive employee benefit packages that attract and retain top talent.',
+    description:
+      'Interactive session on designing competitive employee benefit packages that attract and retain top talent.',
     status: 'Upcoming',
     image: '/hero-3.jpg',
   },
@@ -41,7 +44,8 @@ const events = [
     time: '1:00 PM - 4:00 PM',
     location: 'Riyadh Financial District',
     type: 'Seminar',
-    description: 'Comprehensive overview of recent regulatory changes and their impact on insurance operations.',
+    description:
+      'Comprehensive overview of recent regulatory changes and their impact on insurance operations.',
     status: 'Past',
     image: '/hero-1.jpg',
   },
@@ -52,7 +56,8 @@ const events = [
     time: '6:00 PM - 9:00 PM',
     location: 'Doha Marriott Hotel',
     type: 'Networking',
-    description: 'Annual client appreciation event featuring industry presentations and networking opportunities.',
+    description:
+      'Annual client appreciation event featuring industry presentations and networking opportunities.',
     status: 'Past',
     image: '/hero-2.jpg',
   },
@@ -82,7 +87,7 @@ export default function EventsCalendar() {
           Upcoming Events
         </h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {upcomingEvents.map((event) => (
+          {upcomingEvents.map(event => (
             <div
               key={event.id}
               className="bg-white border border-corporate-grey-100 p-6 hover:shadow-lg transition-all duration-300"
@@ -143,7 +148,7 @@ export default function EventsCalendar() {
           Past Events
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {pastEvents.map((event) => (
+          {pastEvents.map(event => (
             <div
               key={event.id}
               className="bg-white border border-corporate-grey-100 p-4 hover:shadow-md transition-all duration-300"

@@ -3,7 +3,8 @@ import Image from 'next/image';
 const benefits = [
   {
     title: 'Professional Growth',
-    description: 'Continuous learning opportunities, mentorship programs, and clear career progression paths',
+    description:
+      'Continuous learning opportunities, mentorship programs, and clear career progression paths',
     icon: '📈',
     features: [
       'Leadership development programs',
@@ -14,7 +15,8 @@ const benefits = [
   },
   {
     title: 'Work-Life Balance',
-    description: 'Flexible work arrangements and comprehensive benefits that support your well-being',
+    description:
+      'Flexible work arrangements and comprehensive benefits that support your well-being',
     icon: '⚖️',
     features: [
       'Flexible working hours',
@@ -63,7 +65,7 @@ export default function WhyJoinUs() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full max-w-7xl mb-16">
-        {benefits.map((benefit, idx) => (
+        {benefits.map(benefit => (
           <div
             key={benefit.title}
             className="bg-tertiary-blue-50 border border-corporate-grey-100 p-8 hover:shadow-lg transition-all duration-300"
@@ -107,13 +109,15 @@ export default function WhyJoinUs() {
           <div>
             <h4 className="text-[20px] leading-[24px] font-medium mb-3">Excellence</h4>
             <p className="text-[14px] leading-[20px] text-white/90">
-              We strive for the highest standards in everything we do, from client service to professional development
+              We strive for the highest standards in everything we do, from client service to
+              professional development
             </p>
           </div>
           <div>
             <h4 className="text-[20px] leading-[24px] font-medium mb-3">Innovation</h4>
             <p className="text-[14px] leading-[20px] text-white/90">
-              We embrace new ideas and technologies to continuously improve our services and solutions
+              We embrace new ideas and technologies to continuously improve our services and
+              solutions
             </p>
           </div>
         </div>

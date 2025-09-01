@@ -4,7 +4,8 @@ const newsArticles = [
   {
     id: 1,
     title: 'Burns & Wilcox MENA Expands Operations in Saudi Arabia',
-    excerpt: 'Strategic expansion to better serve the growing Saudi market with enhanced local presence and specialized insurance solutions.',
+    excerpt:
+      'Strategic expansion to better serve the growing Saudi market with enhanced local presence and specialized insurance solutions.',
     category: 'Company News',
     date: 'December 15, 2024',
     readTime: '3 min read',
@@ -14,7 +15,8 @@ const newsArticles = [
   {
     id: 2,
     title: 'New Cyber Risk Insurance Solutions for MENA Businesses',
-    excerpt: 'Launch of comprehensive cyber protection packages designed specifically for the unique digital challenges facing Middle Eastern companies.',
+    excerpt:
+      'Launch of comprehensive cyber protection packages designed specifically for the unique digital challenges facing Middle Eastern companies.',
     category: 'Product Launch',
     date: 'December 10, 2024',
     readTime: '4 min read',
@@ -24,7 +26,8 @@ const newsArticles = [
   {
     id: 3,
     title: 'Industry Insights: The Future of Insurance in the Digital Age',
-    excerpt: 'Expert analysis on how emerging technologies are reshaping the insurance landscape and what it means for MENA businesses.',
+    excerpt:
+      'Expert analysis on how emerging technologies are reshaping the insurance landscape and what it means for MENA businesses.',
     category: 'Industry Insights',
     date: 'December 8, 2024',
     readTime: '6 min read',
@@ -34,7 +37,8 @@ const newsArticles = [
   {
     id: 4,
     title: 'Burns & Wilcox MENA Partners with Leading Regional Banks',
-    excerpt: 'Strategic partnerships established to provide integrated financial and insurance solutions for corporate clients.',
+    excerpt:
+      'Strategic partnerships established to provide integrated financial and insurance solutions for corporate clients.',
     category: 'Partnerships',
     date: 'December 5, 2024',
     readTime: '3 min read',
@@ -44,7 +48,8 @@ const newsArticles = [
   {
     id: 5,
     title: 'Employee Benefits Trends in the Middle East',
-    excerpt: 'Comprehensive analysis of evolving employee benefit preferences and how companies are adapting their offerings.',
+    excerpt:
+      'Comprehensive analysis of evolving employee benefit preferences and how companies are adapting their offerings.',
     category: 'Market Research',
     date: 'December 3, 2024',
     readTime: '5 min read',
@@ -54,7 +59,8 @@ const newsArticles = [
   {
     id: 6,
     title: 'Regulatory Update: New Insurance Laws in the UAE',
-    excerpt: 'Important updates on recent regulatory changes and their implications for businesses operating in the UAE.',
+    excerpt:
+      'Important updates on recent regulatory changes and their implications for businesses operating in the UAE.',
     category: 'Regulatory',
     date: 'November 30, 2024',
     readTime: '4 min read',
@@ -91,7 +97,9 @@ export default function LatestNews() {
                   <span className="bg-corporate-blue-500 text-white text-sm px-3 py-1 font-medium">
                     Featured
                   </span>
-                  <span className="text-corporate-grey-600 text-sm">{featuredArticle.category}</span>
+                  <span className="text-corporate-grey-600 text-sm">
+                    {featuredArticle.category}
+                  </span>
                   <span className="text-corporate-grey-500 text-sm">{featuredArticle.date}</span>
                 </div>
                 <h3 className="text-[33px] leading-[40px] font-medium text-corporate-grey-900 mb-4">
@@ -101,7 +109,9 @@ export default function LatestNews() {
                   {featuredArticle.excerpt}
                 </p>
                 <div className="flex items-center gap-4">
-                  <span className="text-corporate-grey-500 text-sm">{featuredArticle.readTime}</span>
+                  <span className="text-corporate-grey-500 text-sm">
+                    {featuredArticle.readTime}
+                  </span>
                   <button className="text-corporate-blue-500 font-medium hover:underline">
                     Read Full Article →
                   </button>
@@ -124,18 +134,13 @@ export default function LatestNews() {
 
       {/* Regular Articles Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl">
-        {regularArticles.map((article) => (
+        {regularArticles.map(article => (
           <article
             key={article.id}
             className="bg-white border border-corporate-grey-100 hover:shadow-lg transition-all duration-300"
           >
             <div className="relative w-full h-48">
-              <Image
-                src={article.image}
-                alt={article.title}
-                fill
-                className="object-cover"
-              />
+              <Image src={article.image} alt={article.title} fill className="object-cover" />
             </div>
             <div className="p-6">
               <div className="flex items-center gap-3 mb-3">

@@ -26,7 +26,8 @@ export default function OurHistoryHero() {
               Our History
             </h1>
             <p className="text-xl md:text-2xl font-normal text-white/90 max-w-3xl">
-              From humble beginnings in 1969 to becoming a global insurance leader, discover the journey that shaped Burns & Wilcox into the trusted partner we are today
+              From humble beginnings in 1969 to becoming a global insurance leader, discover the
+              journey that shaped Burns & Wilcox into the trusted partner we are today
             </p>
           </div>
           <div className="flex gap-4 mt-8">

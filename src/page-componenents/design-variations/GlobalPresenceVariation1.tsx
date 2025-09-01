@@ -8,29 +8,29 @@ const regions = [
     offices: 25,
     image: '/hero-1.jpg',
     description: 'Our largest market with comprehensive coverage solutions',
-    specialties: ['Property', 'Casualty', 'Professional Lines']
+    specialties: ['Property', 'Casualty', 'Professional Lines'],
   },
   {
     name: 'Europe',
     offices: 18,
     image: '/hero-2.jpg',
     description: 'Specialized expertise in continental risk management',
-    specialties: ['Marine', 'Aviation', 'Energy']
+    specialties: ['Marine', 'Aviation', 'Energy'],
   },
   {
     name: 'Middle East',
     offices: 8,
     image: '/hero-3.jpg',
     description: 'Growing presence in emerging insurance markets',
-    specialties: ['Construction', 'Infrastructure', 'Trade Credit']
+    specialties: ['Construction', 'Infrastructure', 'Trade Credit'],
   },
   {
     name: 'Asia Pacific',
     offices: 12,
     image: '/hero-1.jpg',
     description: 'Strategic partnerships across diverse markets',
-    specialties: ['Cyber', 'Technology', 'Manufacturing']
-  }
+    specialties: ['Cyber', 'Technology', 'Manufacturing'],
+  },
 ];
 
 export default function GlobalPresenceVariation1() {
@@ -47,7 +47,8 @@ export default function GlobalPresenceVariation1() {
           <span className="text-corporate-blue-500"> Local Expertise</span>
         </h1>
         <p className="text-xl text-corporate-grey-600 max-w-3xl mx-auto leading-relaxed">
-          With over 60 offices across 4 continents, we deliver insurance solutions that understand your local market while leveraging global expertise and resources.
+          With over 60 offices across 4 continents, we deliver insurance solutions that understand
+          your local market while leveraging global expertise and resources.
         </p>
       </div>
 
@@ -72,14 +73,14 @@ export default function GlobalPresenceVariation1() {
                   <p className="text-sm opacity-90">{region.offices} Offices</p>
                 </div>
               </div>
-              
+
               <div className="p-6">
                 <p className="text-corporate-grey-600 text-sm mb-4 leading-relaxed">
                   {region.description}
                 </p>
-                
+
                 <div className="space-y-2 mb-4">
-                  {region.specialties.map((specialty) => (
+                  {region.specialties.map(specialty => (
                     <span
                       key={specialty}
                       className="inline-block bg-corporate-blue-50 text-corporate-blue-700 text-xs px-3 py-1 rounded-full mr-2 mb-2"
@@ -88,7 +89,7 @@ export default function GlobalPresenceVariation1() {
                     </span>
                   ))}
                 </div>
-                
+
                 <button className="w-full bg-corporate-blue-500 text-white py-3 px-4 rounded-lg font-medium hover:bg-corporate-blue-600 transition-colors duration-300 group-hover:bg-corporate-blue-600">
                   Explore {region.name}
                 </button>
@@ -104,7 +105,7 @@ export default function GlobalPresenceVariation1() {
           <h2 className="text-3xl font-bold text-corporate-grey-900 text-center mb-12">
             Global Impact by the Numbers
           </h2>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-corporate-blue-500 mb-2">60+</div>

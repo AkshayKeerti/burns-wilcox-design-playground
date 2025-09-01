@@ -5,7 +5,7 @@ import { useState } from 'react';
 const tabs = [
   { key: 'property', title: 'Property', points: ['Buildings', 'Contents', 'BI'] },
   { key: 'casualty', title: 'Casualty', points: ['GL', 'Products', 'Umbrella'] },
-  { key: 'cyber', title: 'Cyber', points: ['Breach', 'Incident Response', 'Downtime'] }
+  { key: 'cyber', title: 'Cyber', points: ['Breach', 'Incident Response', 'Downtime'] },
 ];
 
 export default function SolutionsVariation3() {
@@ -20,11 +20,18 @@ export default function SolutionsVariation3() {
             <span>Interactive Solutions</span>
           </div>
           <h1 className="text-6xl font-bold">Choose Your Focus</h1>
-          <p className="mt-4 text-white/90 max-w-3xl">Switch tabs to explore what matters most to your organization.</p>
+          <p className="mt-4 text-white/90 max-w-3xl">
+            Switch tabs to explore what matters most to your organization.
+          </p>
           <div className="mt-8 flex flex-wrap gap-3">
             {tabs.map(t => (
-              <button key={t.key} onClick={() => setActive(t.key)}
-                className={`px-4 py-2 rounded ${active===t.key?'bg-white text-corporate-blue-800':'bg-white/20 text-white'}`}>{t.title}</button>
+              <button
+                key={t.key}
+                onClick={() => setActive(t.key)}
+                className={`px-4 py-2 rounded ${active === t.key ? 'bg-white text-corporate-blue-800' : 'bg-white/20 text-white'}`}
+              >
+                {t.title}
+              </button>
             ))}
           </div>
         </div>
@@ -32,7 +39,9 @@ export default function SolutionsVariation3() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <h3 className="text-3xl font-semibold text-corporate-grey-900 mb-4">{current.title}</h3>
         <ul className="list-disc pl-6 text-corporate-grey-700 space-y-2">
-          {current.points.map(p => (<li key={p}>{p}</li>))}
+          {current.points.map(p => (
+            <li key={p}>{p}</li>
+          ))}
         </ul>
       </div>
     </section>

@@ -26,7 +26,8 @@ export default function ContactHero() {
               Contact Us
             </h1>
             <p className="text-xl md:text-2xl font-normal text-white/90 max-w-3xl">
-              Ready to discuss your insurance needs? Our team is here to help you find the right solutions for your business and personal protection.
+              Ready to discuss your insurance needs? Our team is here to help you find the right
+              solutions for your business and personal protection.
             </p>
           </div>
           <div className="flex gap-4 mt-8">

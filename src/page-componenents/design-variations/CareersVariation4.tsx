@@ -14,8 +14,8 @@ const careerPaths = [
     growth: 'Senior Underwriter → Underwriting Manager → Director',
     image: '/hero-1.jpg',
     color: 'from-blue-600 to-blue-800',
-    requirements: ['Bachelor\'s degree', 'Strong analytical skills', 'Attention to detail'],
-    salary: '$65K - $85K'
+    requirements: ["Bachelor's degree", 'Strong analytical skills', 'Attention to detail'],
+    salary: '$65K - $85K',
   },
   {
     id: 2,
@@ -28,8 +28,8 @@ const careerPaths = [
     image: '/hero-2.jpg',
     color: 'from-green-600 to-green-800',
     requirements: ['Sales experience', 'Client relationship skills', 'Industry knowledge'],
-    salary: '$85K - $120K'
-  }
+    salary: '$85K - $120K',
+  },
 ];
 
 export default function CareersVariation4() {
@@ -49,14 +49,14 @@ export default function CareersVariation4() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-corporate-blue-900 via-corporate-blue-800 to-black"></div>
         </div>
-        
+
         <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-8">
           <div className="mb-16">
             <div className="inline-flex items-center gap-4 bg-white/20 backdrop-blur-md px-8 py-4 rounded-full mb-12 border border-white/30">
               <div className="w-3 h-3 bg-corporate-blue-400 rounded-full animate-pulse"></div>
               <span className="text-lg font-semibold tracking-wide">Join Our Team</span>
             </div>
-            
+
             <h1 className="text-7xl md:text-9xl font-black mb-12 leading-none tracking-tight">
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white via-corporate-blue-200 to-corporate-blue-400">
                 BUILD YOUR
@@ -65,12 +65,12 @@ export default function CareersVariation4() {
                 FUTURE
               </span>
             </h1>
-            
+
             <p className="text-2xl md:text-3xl font-light text-white/90 max-w-4xl mx-auto leading-relaxed mb-16">
               Join a team of 2,300+ insurance professionals across the globe
             </p>
           </div>
-          
+
           <div className="flex flex-wrap justify-center gap-6 mb-12">
             {careerPaths.map((path, index) => (
               <button
@@ -86,18 +86,24 @@ export default function CareersVariation4() {
               </button>
             ))}
           </div>
-          
+
           <div className="bg-white/15 backdrop-blur-md rounded-3xl p-8 max-w-3xl mx-auto border border-white/20">
             <h3 className="text-4xl font-black mb-4">{careerPaths[selectedPath].title}</h3>
-            <p className="text-xl text-white/90 mb-6 leading-relaxed">{careerPaths[selectedPath].description}</p>
+            <p className="text-xl text-white/90 mb-6 leading-relaxed">
+              {careerPaths[selectedPath].description}
+            </p>
             <div className="flex items-center justify-center gap-8 text-lg">
-              <span className="text-corporate-blue-200 font-bold">{careerPaths[selectedPath].level}</span>
+              <span className="text-corporate-blue-200 font-bold">
+                {careerPaths[selectedPath].level}
+              </span>
               <span className="text-white/40 text-2xl">•</span>
-              <span className="text-corporate-blue-200 font-bold">{careerPaths[selectedPath].experience}</span>
+              <span className="text-corporate-blue-200 font-bold">
+                {careerPaths[selectedPath].experience}
+              </span>
             </div>
           </div>
         </div>
-        
+
         <div className="absolute top-32 left-32 w-40 h-40 bg-corporate-blue-400/30 rounded-full blur-2xl animate-pulse"></div>
         <div className="absolute bottom-32 right-32 w-32 h-32 bg-corporate-blue-300/30 rounded-full blur-2xl animate-pulse delay-1000"></div>
       </div>
@@ -106,7 +112,11 @@ export default function CareersVariation4() {
       <div className="py-32 px-8 bg-gradient-to-r from-corporate-blue-600 via-corporate-blue-700 to-corporate-blue-800">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-7xl font-black text-white mb-12">
-            Ready to Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-blue-200 to-white">Journey</span>?
+            Ready to Start Your{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-blue-200 to-white">
+              Journey
+            </span>
+            ?
           </h2>
           <p className="text-2xl text-white/90 mb-16 leading-relaxed">
             Explore our current openings and find the perfect role to advance your career

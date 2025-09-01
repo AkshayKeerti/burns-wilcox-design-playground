@@ -3,7 +3,8 @@ import Image from 'next/image';
 const coreValues = [
   {
     value: 'Integrity',
-    description: 'We operate with honesty, transparency, and ethical behavior in all our interactions, building trust with clients, partners, and communities.',
+    description:
+      'We operate with honesty, transparency, and ethical behavior in all our interactions, building trust with clients, partners, and communities.',
     icon: '🤝',
     examples: [
       'Transparent pricing and policies',
@@ -15,7 +16,8 @@ const coreValues = [
   },
   {
     value: 'Excellence',
-    description: 'We strive for the highest standards in everything we do, from client service to professional development and operational efficiency.',
+    description:
+      'We strive for the highest standards in everything we do, from client service to professional development and operational efficiency.',
     icon: '⭐',
     examples: [
       'Superior client service',
@@ -27,7 +29,8 @@ const coreValues = [
   },
   {
     value: 'Innovation',
-    description: 'We embrace new ideas, technologies, and approaches to continuously improve our services and deliver better solutions for our clients.',
+    description:
+      'We embrace new ideas, technologies, and approaches to continuously improve our services and deliver better solutions for our clients.',
     icon: '🚀',
     examples: [
       'Digital transformation',
@@ -39,7 +42,8 @@ const coreValues = [
   },
   {
     value: 'Client Focus',
-    description: 'Our clients\' success is our success. We put their needs first and build long-term relationships based on trust, results, and mutual growth.',
+    description:
+      "Our clients' success is our success. We put their needs first and build long-term relationships based on trust, results, and mutual growth.",
     icon: '🎯',
     examples: [
       'Personalized solutions',
@@ -51,7 +55,8 @@ const coreValues = [
   },
   {
     value: 'Global Perspective',
-    description: 'We leverage worldwide expertise while maintaining deep local market knowledge and cultural sensitivity in every region we serve.',
+    description:
+      'We leverage worldwide expertise while maintaining deep local market knowledge and cultural sensitivity in every region we serve.',
     icon: '🌍',
     examples: [
       'International expertise',
@@ -63,7 +68,8 @@ const coreValues = [
   },
   {
     value: 'Sustainability',
-    description: 'We build a business that creates long-term value for all stakeholders, including our communities, environment, and future generations.',
+    description:
+      'We build a business that creates long-term value for all stakeholders, including our communities, environment, and future generations.',
     icon: '🌱',
     examples: [
       'Environmental responsibility',
@@ -78,17 +84,20 @@ const coreValues = [
 const valueInAction = [
   {
     title: 'Integrity in Practice',
-    description: 'Our transparent pricing model and clear communication ensure clients always know what they\'re paying for and what coverage they receive.',
+    description:
+      "Our transparent pricing model and clear communication ensure clients always know what they're paying for and what coverage they receive.",
     image: '/hero-1.jpg',
   },
   {
     title: 'Excellence in Service',
-    description: 'Our 95% client satisfaction rate reflects our commitment to delivering exceptional service and exceeding expectations.',
+    description:
+      'Our 95% client satisfaction rate reflects our commitment to delivering exceptional service and exceeding expectations.',
     image: '/hero-2.jpg',
   },
   {
     title: 'Innovation in Action',
-    description: 'Our digital platforms and AI-powered risk assessment tools demonstrate our commitment to leveraging technology for client benefit.',
+    description:
+      'Our digital platforms and AI-powered risk assessment tools demonstrate our commitment to leveraging technology for client benefit.',
     image: '/hero-3.jpg',
   },
 ];
@@ -111,21 +120,23 @@ export default function Values() {
       {/* Core Values Grid */}
       <div className="w-full max-w-7xl mb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {coreValues.map((value) => (
+          {coreValues.map(value => (
             <div
               key={value.value}
               className="bg-tertiary-blue-50 border border-corporate-grey-100 p-6 hover:shadow-lg transition-all duration-300"
             >
               <div className="text-center mb-6">
                 <div className="text-5xl mb-4">{value.icon}</div>
-                <div className={`${value.color} text-white text-sm px-3 py-1 font-medium inline-block mb-3`}>
+                <div
+                  className={`${value.color} text-white text-sm px-3 py-1 font-medium inline-block mb-3`}
+                >
                   {value.value}
                 </div>
                 <p className="text-[14px] leading-[20px] text-corporate-grey-700">
                   {value.description}
                 </p>
               </div>
-              
+
               <div>
                 <h5 className="text-[16px] leading-[20px] font-medium text-corporate-grey-900 mb-3">
                   How We Live This Value
@@ -152,7 +163,7 @@ export default function Values() {
           Values in Action
         </h3>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {valueInAction.map((item) => (
+          {valueInAction.map(item => (
             <div
               key={item.title}
               className="bg-white border border-corporate-grey-100 p-6 hover:shadow-lg transition-all duration-300"
@@ -178,11 +189,12 @@ export default function Values() {
 
       {/* Values Statement */}
       <div className="bg-corporate-blue-500 text-white p-12 max-w-6xl text-center mb-16">
-        <h3 className="text-[33px] leading-[40px] font-medium mb-6">
-          Our Values Define Us
-        </h3>
+        <h3 className="text-[33px] leading-[40px] font-medium mb-6">Our Values Define Us</h3>
         <p className="text-[18px] leading-[27px] mb-8 max-w-4xl mx-auto">
-          These values are not just words on a page—they are the principles that guide every decision we make, every action we take, and every relationship we build. They are the foundation of our culture and the promise we make to our clients, partners, and communities.
+          These values are not just words on a page—they are the principles that guide every
+          decision we make, every action we take, and every relationship we build. They are the
+          foundation of our culture and the promise we make to our clients, partners, and
+          communities.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -215,7 +227,8 @@ export default function Values() {
           Live Our Values With Us
         </h3>
         <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-6">
-          If our values resonate with you, we invite you to join our team, become our client, or partner with us in building a better future.
+          If our values resonate with you, we invite you to join our team, become our client, or
+          partner with us in building a better future.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-corporate-blue-500 text-white px-8 py-4 font-medium hover:bg-corporate-blue-600 transition-colors">

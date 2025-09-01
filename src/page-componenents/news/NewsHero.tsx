@@ -5,13 +5,7 @@ export default function NewsHero() {
     <section className="relative w-full h-[60vh] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src="/hero-2.jpg"
-          alt="News and Events"
-          fill
-          className="object-cover"
-          priority
-        />
+        <Image src="/hero-2.jpg" alt="News and Events" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
@@ -26,7 +20,8 @@ export default function NewsHero() {
               News & Events
             </h1>
             <p className="text-xl md:text-2xl font-normal text-white/90 max-w-3xl">
-              Stay updated with the latest industry insights, company news, and upcoming events from Burns & Wilcox MENA
+              Stay updated with the latest industry insights, company news, and upcoming events from
+              Burns & Wilcox MENA
             </p>
           </div>
           <div className="flex gap-4 mt-8">

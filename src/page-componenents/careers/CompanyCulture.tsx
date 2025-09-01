@@ -3,7 +3,8 @@ import Image from 'next/image';
 const cultureHighlights = [
   {
     title: 'Diversity & Inclusion',
-    description: 'We celebrate diverse perspectives and create an inclusive environment where everyone feels valued and heard.',
+    description:
+      'We celebrate diverse perspectives and create an inclusive environment where everyone feels valued and heard.',
     image: '/hero-1.jpg',
     features: [
       'Equal opportunity employer',
@@ -14,7 +15,8 @@ const cultureHighlights = [
   },
   {
     title: 'Learning & Development',
-    description: 'Continuous learning is at the heart of our culture, with extensive training and development opportunities.',
+    description:
+      'Continuous learning is at the heart of our culture, with extensive training and development opportunities.',
     image: '/hero-2.jpg',
     features: [
       'Professional certification support',
@@ -25,7 +27,8 @@ const cultureHighlights = [
   },
   {
     title: 'Work-Life Integration',
-    description: 'We understand the importance of balance and provide flexible arrangements to support your personal and professional life.',
+    description:
+      'We understand the importance of balance and provide flexible arrangements to support your personal and professional life.',
     image: '/hero-3.jpg',
     features: [
       'Flexible working hours',
@@ -41,21 +44,24 @@ const testimonials = [
     name: 'Sarah Al-Mansouri',
     role: 'Senior Insurance Broker',
     location: 'Dubai, UAE',
-    quote: 'Working at Burns & Wilcox has been an incredible journey. The company truly invests in its people and provides opportunities for growth that I never thought possible.',
+    quote:
+      'Working at Burns & Wilcox has been an incredible journey. The company truly invests in its people and provides opportunities for growth that I never thought possible.',
     image: '/hero-1.jpg',
   },
   {
     name: 'Ahmed Hassan',
     role: 'Cyber Risk Specialist',
     location: 'Abu Dhabi, UAE',
-    quote: 'The collaborative culture here is amazing. Everyone is willing to share knowledge and support each other\'s success. It\'s more than just a job - it\'s a family.',
+    quote:
+      "The collaborative culture here is amazing. Everyone is willing to share knowledge and support each other's success. It's more than just a job - it's a family.",
     image: '/hero-2.jpg',
   },
   {
     name: 'Fatima Zahra',
     role: 'Employee Benefits Consultant',
     location: 'Riyadh, Saudi Arabia',
-    quote: 'I love how the company embraces innovation while maintaining the highest ethical standards. It\'s the perfect balance of progress and integrity.',
+    quote:
+      "I love how the company embraces innovation while maintaining the highest ethical standards. It's the perfect balance of progress and integrity.",
     image: '/hero-3.jpg',
   },
 ];
@@ -124,7 +130,7 @@ export default function CompanyCulture() {
           What Our Team Says
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, idx) => (
+          {testimonials.map(testimonial => (
             <div
               key={testimonial.name}
               className="bg-tertiary-blue-50 border border-corporate-grey-100 p-6 hover:shadow-lg transition-all duration-300"
@@ -160,9 +166,7 @@ export default function CompanyCulture() {
 
       {/* Culture Stats */}
       <div className="bg-corporate-blue-500 text-white p-12 max-w-6xl text-center">
-        <h3 className="text-[33px] leading-[40px] font-medium mb-8">
-          Our Culture by the Numbers
-        </h3>
+        <h3 className="text-[33px] leading-[40px] font-medium mb-8">Our Culture by the Numbers</h3>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="text-4xl font-bold mb-2">95%</div>
@@ -189,7 +193,8 @@ export default function CompanyCulture() {
           Ready to Join Our Team?
         </h3>
         <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-6">
-          If our culture and values resonate with you, we'd love to hear from you. Explore our open positions or reach out to learn more about opportunities at Burns & Wilcox MENA.
+          If our culture and values resonate with you, we'd love to hear from you. Explore our open
+          positions or reach out to learn more about opportunities at Burns & Wilcox MENA.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-corporate-blue-500 text-white px-8 py-4 font-medium hover:bg-corporate-blue-600 transition-colors">

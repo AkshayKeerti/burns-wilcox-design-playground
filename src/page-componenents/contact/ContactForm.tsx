@@ -23,7 +23,9 @@ export default function ContactForm() {
     message: '',
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -34,7 +36,7 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission logic here
-    console.log('Form submitted:', formData);
+    // Form data would be sent to backend here
   };
 
   return (
@@ -56,7 +58,10 @@ export default function ContactForm() {
           {/* Personal Information */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="firstName" className="block text-[16px] font-medium text-corporate-grey-900 mb-2">
+              <label
+                htmlFor="firstName"
+                className="block text-[16px] font-medium text-corporate-grey-900 mb-2"
+              >
                 First Name *
               </label>
               <input
@@ -71,7 +76,10 @@ export default function ContactForm() {
               />
             </div>
             <div>
-              <label htmlFor="lastName" className="block text-[16px] font-medium text-corporate-grey-900 mb-2">
+              <label
+                htmlFor="lastName"
+                className="block text-[16px] font-medium text-corporate-grey-900 mb-2"
+              >
                 Last Name *
               </label>
               <input
@@ -90,7 +98,10 @@ export default function ContactForm() {
           {/* Contact Information */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="email" className="block text-[16px] font-medium text-corporate-grey-900 mb-2">
+              <label
+                htmlFor="email"
+                className="block text-[16px] font-medium text-corporate-grey-900 mb-2"
+              >
                 Email Address *
               </label>
               <input
@@ -105,7 +116,10 @@ export default function ContactForm() {
               />
             </div>
             <div>
-              <label htmlFor="phone" className="block text-[16px] font-medium text-corporate-grey-900 mb-2">
+              <label
+                htmlFor="phone"
+                className="block text-[16px] font-medium text-corporate-grey-900 mb-2"
+              >
                 Phone Number
               </label>
               <input
@@ -123,7 +137,10 @@ export default function ContactForm() {
           {/* Company and Inquiry Type */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="company" className="block text-[16px] font-medium text-corporate-grey-900 mb-2">
+              <label
+                htmlFor="company"
+                className="block text-[16px] font-medium text-corporate-grey-900 mb-2"
+              >
                 Company Name
               </label>
               <input
@@ -137,7 +154,10 @@ export default function ContactForm() {
               />
             </div>
             <div>
-              <label htmlFor="inquiryType" className="block text-[16px] font-medium text-corporate-grey-900 mb-2">
+              <label
+                htmlFor="inquiryType"
+                className="block text-[16px] font-medium text-corporate-grey-900 mb-2"
+              >
                 Inquiry Type *
               </label>
               <select
@@ -149,7 +169,7 @@ export default function ContactForm() {
                 className="w-full px-4 py-3 border border-corporate-grey-300 focus:outline-none focus:border-corporate-blue-500 transition-colors"
               >
                 <option value="">Select inquiry type</option>
-                {inquiryTypes.map((type) => (
+                {inquiryTypes.map(type => (
                   <option key={type} value={type}>
                     {type}
                   </option>
@@ -160,7 +180,10 @@ export default function ContactForm() {
 
           {/* Message */}
           <div>
-            <label htmlFor="message" className="block text-[16px] font-medium text-corporate-grey-900 mb-2">
+            <label
+              htmlFor="message"
+              className="block text-[16px] font-medium text-corporate-grey-900 mb-2"
+            >
               Message *
             </label>
             <textarea
@@ -206,18 +229,14 @@ export default function ContactForm() {
               <h4 className="text-[18px] leading-[22px] font-medium text-corporate-grey-900 mb-2">
                 Call Us
               </h4>
-              <p className="text-[14px] leading-[20px] text-corporate-grey-600">
-                +971 4 123 4567
-              </p>
+              <p className="text-[14px] leading-[20px] text-corporate-grey-600">+971 4 123 4567</p>
             </div>
             <div>
               <div className="text-3xl mb-3">💬</div>
               <h4 className="text-[18px] leading-[22px] font-medium text-corporate-grey-900 mb-2">
                 Live Chat
               </h4>
-              <p className="text-[14px] leading-[20px] text-corporate-grey-600">
-                Available 24/7
-              </p>
+              <p className="text-[14px] leading-[20px] text-corporate-grey-600">Available 24/7</p>
             </div>
           </div>
         </div>

@@ -7,7 +7,8 @@ const featuredNews = [
   {
     id: 1,
     title: 'Burns & Wilcox Expands European Operations with New London Office',
-    excerpt: 'Strategic expansion strengthens our presence in key European markets, offering enhanced risk management solutions for international clients.',
+    excerpt:
+      'Strategic expansion strengthens our presence in key European markets, offering enhanced risk management solutions for international clients.',
     category: 'Company News',
     date: 'December 15, 2024',
     readTime: '5 min read',
@@ -15,12 +16,13 @@ const featuredNews = [
     author: 'Sarah Johnson',
     featured: true,
     tags: ['Expansion', 'Europe', 'Strategy'],
-    color: 'from-blue-600 to-blue-800'
+    color: 'from-blue-600 to-blue-800',
   },
   {
     id: 2,
     title: 'New Cyber Insurance Solutions Address Emerging Digital Threats',
-    excerpt: 'Comprehensive coverage options designed to protect businesses from evolving cybersecurity risks and data breach incidents.',
+    excerpt:
+      'Comprehensive coverage options designed to protect businesses from evolving cybersecurity risks and data breach incidents.',
     category: 'Product Updates',
     date: 'December 12, 2024',
     readTime: '3 min read',
@@ -28,12 +30,13 @@ const featuredNews = [
     author: 'Michael Chen',
     featured: false,
     tags: ['Cyber', 'Security', 'Innovation'],
-    color: 'from-green-600 to-green-800'
+    color: 'from-green-600 to-green-800',
   },
   {
     id: 3,
     title: 'Industry Recognition: Top 10 Global Insurance Broker 2024',
-    excerpt: 'Continued excellence in client service and innovative solutions earns Burns & Wilcox prestigious industry recognition.',
+    excerpt:
+      'Continued excellence in client service and innovative solutions earns Burns & Wilcox prestigious industry recognition.',
     category: 'Awards',
     date: 'December 10, 2024',
     readTime: '4 min read',
@@ -41,17 +44,21 @@ const featuredNews = [
     author: 'Emily Rodriguez',
     featured: false,
     tags: ['Awards', 'Recognition', 'Excellence'],
-    color: 'from-purple-600 to-purple-800'
-  }
+    color: 'from-purple-600 to-purple-800',
+  },
 ];
 
 const categories = [
-  { name: 'All News', count: 24, color: 'bg-gradient-to-r from-corporate-blue-600 to-corporate-blue-700' },
+  {
+    name: 'All News',
+    count: 24,
+    color: 'bg-gradient-to-r from-corporate-blue-600 to-corporate-blue-700',
+  },
   { name: 'Company Updates', count: 8, color: 'bg-gradient-to-r from-green-600 to-green-700' },
   { name: 'Industry Insights', count: 6, color: 'bg-gradient-to-r from-purple-600 to-purple-700' },
   { name: 'Product News', count: 5, color: 'bg-gradient-to-r from-orange-600 to-orange-700' },
   { name: 'Client Stories', count: 3, color: 'bg-gradient-to-r from-pink-600 to-pink-700' },
-  { name: 'Thought Leadership', count: 2, color: 'bg-gradient-to-r from-indigo-600 to-indigo-700' }
+  { name: 'Thought Leadership', count: 2, color: 'bg-gradient-to-r from-indigo-600 to-indigo-700' },
 ];
 
 const trendingTopics = [
@@ -60,7 +67,7 @@ const trendingTopics = [
   'Supply Chain Insurance',
   'ESG Compliance',
   'Cyber Security',
-  'Remote Work Coverage'
+  'Remote Work Coverage',
 ];
 
 export default function NewsVariation4() {
@@ -71,16 +78,10 @@ export default function NewsVariation4() {
       {/* Bold Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <Image
-            src="/hero-2.jpg"
-            alt="News and Events"
-            fill
-            className="object-cover"
-            priority
-          />
+          <Image src="/hero-2.jpg" alt="News and Events" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-br from-black via-corporate-blue-900 to-black"></div>
         </div>
-        
+
         <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-8">
           <div className="mb-16">
             {/* Bold Badge */}
@@ -88,7 +89,7 @@ export default function NewsVariation4() {
               <div className="w-3 h-3 bg-corporate-blue-400 rounded-full animate-pulse"></div>
               <span className="text-lg font-semibold tracking-wide">Latest Updates</span>
             </div>
-            
+
             {/* Bold Typography */}
             <h1 className="text-7xl md:text-9xl font-black mb-12 leading-none tracking-tight">
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white via-corporate-blue-200 to-corporate-blue-400">
@@ -98,15 +99,15 @@ export default function NewsVariation4() {
                 INSIGHTS
               </span>
             </h1>
-            
+
             <p className="text-2xl md:text-3xl font-light text-white/90 max-w-4xl mx-auto leading-relaxed mb-16">
               Stay informed with the latest industry trends, company updates, and expert insights
             </p>
           </div>
-          
+
           {/* Bold Category Selector */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
+            {categories.map(category => (
               <button
                 key={category.name}
                 onClick={() => setSelectedCategory(category.name)}
@@ -125,7 +126,7 @@ export default function NewsVariation4() {
             ))}
           </div>
         </div>
-        
+
         {/* Bold Floating Elements */}
         <div className="absolute top-32 left-32 w-40 h-40 bg-corporate-blue-400/30 rounded-full blur-2xl animate-pulse"></div>
         <div className="absolute bottom-32 right-32 w-32 h-32 bg-corporate-blue-300/30 rounded-full blur-2xl animate-pulse delay-1000"></div>
@@ -136,11 +137,14 @@ export default function NewsVariation4() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-20">
             <h2 className="text-6xl font-black text-corporate-grey-900 mb-8 text-center">
-              Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-blue-500 to-corporate-blue-700">Story</span>
+              Featured{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-blue-500 to-corporate-blue-700">
+                Story
+              </span>
             </h2>
             <div className="w-32 h-1 bg-corporate-blue-500 mx-auto"></div>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="relative group cursor-pointer">
               <div className="relative h-[500px] overflow-hidden rounded-3xl shadow-2xl">
@@ -151,7 +155,7 @@ export default function NewsVariation4() {
                   className="object-cover group-hover:scale-110 transition-transform duration-1000"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                
+
                 {/* Bold Interactive Overlay */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-700 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transition-all duration-700 transform translate-y-8 group-hover:translate-y-0">
@@ -162,28 +166,30 @@ export default function NewsVariation4() {
                 </div>
               </div>
             </div>
-            
+
             <div className="space-y-8">
               <div className="flex items-center gap-6 text-lg text-corporate-grey-500">
-                <span className={`inline-block ${featuredNews[0].color} text-white px-6 py-3 rounded-full font-bold text-lg`}>
+                <span
+                  className={`inline-block ${featuredNews[0].color} text-white px-6 py-3 rounded-full font-bold text-lg`}
+                >
                   {featuredNews[0].category}
                 </span>
                 <span className="font-medium">{featuredNews[0].date}</span>
                 <span className="text-2xl">•</span>
                 <span className="font-medium">{featuredNews[0].readTime}</span>
               </div>
-              
+
               <h3 className="text-4xl font-black text-corporate-grey-900 leading-tight">
                 {featuredNews[0].title}
               </h3>
-              
+
               <p className="text-xl text-corporate-grey-600 leading-relaxed">
                 {featuredNews[0].excerpt}
               </p>
-              
+
               {/* Bold Interactive Tags */}
               <div className="flex flex-wrap gap-3">
-                {featuredNews[0].tags.map((tag) => (
+                {featuredNews[0].tags.map(tag => (
                   <span
                     key={tag}
                     className="bg-corporate-grey-100 text-corporate-grey-700 px-4 py-2 rounded-full text-lg hover:bg-corporate-blue-100 hover:text-corporate-blue-700 transition-all duration-500 cursor-pointer font-medium"
@@ -192,19 +198,24 @@ export default function NewsVariation4() {
                   </span>
                 ))}
               </div>
-              
+
               <div className="flex items-center gap-6">
                 <div className="w-16 h-16 bg-corporate-blue-100 rounded-full flex items-center justify-center">
                   <span className="text-corporate-blue-600 font-black text-2xl">
-                    {featuredNews[0].author.split(' ').map(n => n[0]).join('')}
+                    {featuredNews[0].author
+                      .split(' ')
+                      .map(n => n[0])
+                      .join('')}
                   </span>
                 </div>
                 <div>
-                  <div className="text-xl font-bold text-corporate-grey-900">{featuredNews[0].author}</div>
+                  <div className="text-xl font-bold text-corporate-grey-900">
+                    {featuredNews[0].author}
+                  </div>
                   <div className="text-lg text-corporate-grey-500">Author</div>
                 </div>
               </div>
-              
+
               <button className="px-10 py-5 bg-corporate-blue-500 text-white font-black text-xl rounded-xl hover:bg-corporate-blue-600 transition-all duration-500 transform hover:scale-110 shadow-2xl">
                 Read Full Article
               </button>
@@ -218,15 +229,18 @@ export default function NewsVariation4() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-20">
             <h2 className="text-6xl font-black text-corporate-grey-900 mb-8 text-center">
-              Latest <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-blue-500 to-corporate-blue-700">Updates</span>
+              Latest{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-blue-500 to-corporate-blue-700">
+                Updates
+              </span>
             </h2>
             <div className="w-32 h-1 bg-corporate-blue-500 mx-auto"></div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {featuredNews.slice(1).map((article, index) => (
-              <article 
-                key={article.id} 
+              <article
+                key={article.id}
                 className="bg-white group hover:shadow-2xl transition-all duration-700 cursor-pointer transform hover:-translate-y-4 rounded-3xl overflow-hidden"
               >
                 <div className="relative h-64 overflow-hidden">
@@ -237,11 +251,13 @@ export default function NewsVariation4() {
                     className="object-cover group-hover:scale-125 transition-transform duration-1000"
                   />
                   <div className="absolute top-6 left-6">
-                    <span className={`inline-block ${article.color} text-white px-4 py-2 rounded-full text-lg font-black shadow-xl`}>
+                    <span
+                      className={`inline-block ${article.color} text-white px-4 py-2 rounded-full text-lg font-black shadow-xl`}
+                    >
                       {article.category}
                     </span>
                   </div>
-                  
+
                   {/* Bold Interactive Overlay */}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-700 flex items-center justify-center">
                     <div className="opacity-0 group-hover:opacity-100 transition-all duration-700 transform translate-y-8 group-hover:translate-y-0">
@@ -251,25 +267,25 @@ export default function NewsVariation4() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="p-8">
                   <div className="flex items-center gap-4 text-lg text-corporate-grey-500 mb-6">
                     <span className="font-medium">{article.date}</span>
                     <span className="text-2xl">•</span>
                     <span className="font-medium">{article.readTime}</span>
                   </div>
-                  
+
                   <h3 className="text-2xl font-black text-corporate-grey-900 mb-4 leading-tight group-hover:text-corporate-blue-600 transition-colors">
                     {article.title}
                   </h3>
-                  
+
                   <p className="text-lg text-corporate-grey-600 mb-6 leading-relaxed">
                     {article.excerpt}
                   </p>
-                  
+
                   {/* Bold Interactive Tags */}
                   <div className="flex flex-wrap gap-3 mb-6">
-                    {article.tags.map((tag) => (
+                    {article.tags.map(tag => (
                       <span
                         key={tag}
                         className="bg-corporate-grey-100 text-corporate-grey-700 px-3 py-2 rounded-full text-base hover:bg-corporate-blue-100 hover:text-corporate-blue-700 transition-all duration-500 font-medium"
@@ -278,7 +294,7 @@ export default function NewsVariation4() {
                       </span>
                     ))}
                   </div>
-                  
+
                   <div className="flex items-center justify-between">
                     <div className="text-lg text-corporate-grey-500 font-medium">
                       By {article.author}
@@ -298,7 +314,10 @@ export default function NewsVariation4() {
       <div className="py-32 px-8 bg-gradient-to-r from-corporate-blue-600 via-corporate-blue-700 to-corporate-blue-800">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-5xl font-black text-white mb-16 text-center">
-            Trending <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-blue-200 to-white">Topics</span>
+            Trending{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-blue-200 to-white">
+              Topics
+            </span>
           </h3>
           <div className="flex flex-wrap justify-center gap-6">
             {trendingTopics.map((topic, index) => (
@@ -318,12 +337,15 @@ export default function NewsVariation4() {
       <div className="py-32 px-8 bg-white">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-6xl font-black text-corporate-grey-900 mb-8">
-            Stay <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-blue-500 to-corporate-blue-700">Connected</span>
+            Stay{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-blue-500 to-corporate-blue-700">
+              Connected
+            </span>
           </h2>
           <p className="text-2xl text-corporate-grey-600 mb-12 leading-relaxed">
             Get the latest insights delivered directly to your inbox
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-6 max-w-2xl mx-auto">
             <input
               type="email"

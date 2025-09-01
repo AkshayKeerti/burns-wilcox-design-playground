@@ -6,9 +6,10 @@ const positions = [
     location: 'Dubai, UAE',
     type: 'Full-time',
     experience: '5-8 years',
-    description: 'Lead complex corporate insurance placements and develop client relationships in the MENA region.',
+    description:
+      'Lead complex corporate insurance placements and develop client relationships in the MENA region.',
     requirements: [
-      'Bachelor\'s degree in Business, Finance, or related field',
+      "Bachelor's degree in Business, Finance, or related field",
       'Minimum 5 years of insurance broking experience',
       'Strong knowledge of corporate insurance products',
       'Excellent client relationship management skills',
@@ -22,7 +23,8 @@ const positions = [
     location: 'Abu Dhabi, UAE',
     type: 'Full-time',
     experience: '3-5 years',
-    description: 'Develop and manage cyber risk insurance solutions for technology and financial services clients.',
+    description:
+      'Develop and manage cyber risk insurance solutions for technology and financial services clients.',
     requirements: [
       'Degree in Information Technology, Cybersecurity, or related field',
       '3+ years of cyber risk assessment experience',
@@ -38,9 +40,10 @@ const positions = [
     location: 'Riyadh, Saudi Arabia',
     type: 'Full-time',
     experience: '4-6 years',
-    description: 'Design and implement comprehensive employee benefit programs for corporate clients.',
+    description:
+      'Design and implement comprehensive employee benefit programs for corporate clients.',
     requirements: [
-      'Bachelor\'s degree in Human Resources, Business, or related field',
+      "Bachelor's degree in Human Resources, Business, or related field",
       '4+ years of employee benefits consulting experience',
       'Knowledge of regional healthcare and insurance regulations',
       'Strong presentation and communication skills',
@@ -54,7 +57,8 @@ const positions = [
     location: 'Doha, Qatar',
     type: 'Full-time',
     experience: '2-4 years',
-    description: 'Advocate for clients during the claims process and ensure optimal settlement outcomes.',
+    description:
+      'Advocate for clients during the claims process and ensure optimal settlement outcomes.',
     requirements: [
       'Degree in Business, Law, or related field',
       '2+ years of claims handling experience',
@@ -70,9 +74,10 @@ const positions = [
     location: 'Dubai, UAE',
     type: 'Full-time',
     experience: '6-8 years',
-    description: 'Develop and execute marketing strategies to enhance brand presence in the MENA region.',
+    description:
+      'Develop and execute marketing strategies to enhance brand presence in the MENA region.',
     requirements: [
-      'Bachelor\'s degree in Marketing, Communications, or related field',
+      "Bachelor's degree in Marketing, Communications, or related field",
       '6+ years of B2B marketing experience',
       'Experience in financial services or insurance industry',
       'Strong digital marketing and content creation skills',
@@ -86,7 +91,8 @@ const positions = [
     location: 'Kuwait City, Kuwait',
     type: 'Full-time',
     experience: '3-5 years',
-    description: 'Conduct risk assessments and provide recommendations for risk mitigation strategies.',
+    description:
+      'Conduct risk assessments and provide recommendations for risk mitigation strategies.',
     requirements: [
       'Degree in Engineering, Risk Management, or related field',
       '3+ years of risk assessment experience',
@@ -141,7 +147,7 @@ export default function OpenPositions() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {positions.map((position) => (
+          {positions.map(position => (
             <div
               key={position.id}
               className="bg-white border border-corporate-grey-100 p-6 hover:shadow-lg transition-all duration-300"
@@ -167,18 +173,20 @@ export default function OpenPositions() {
                   {position.status}
                 </span>
               </div>
-              
+
               <p className="text-[14px] leading-[20px] text-corporate-grey-700 mb-4">
                 {position.description}
               </p>
-              
+
               <div className="mb-4">
                 <span className="text-corporate-grey-600 text-sm font-medium">Experience: </span>
                 <span className="text-corporate-grey-700 text-sm">{position.experience}</span>
               </div>
-              
+
               <div className="mb-4">
-                <span className="text-corporate-grey-600 text-sm font-medium">Key Requirements:</span>
+                <span className="text-corporate-grey-600 text-sm font-medium">
+                  Key Requirements:
+                </span>
                 <ul className="mt-2 space-y-1">
                   {position.requirements.slice(0, 2).map((req, idx) => (
                     <li key={idx} className="flex items-start gap-2">
@@ -190,7 +198,7 @@ export default function OpenPositions() {
                   ))}
                 </ul>
               </div>
-              
+
               <button className="bg-corporate-blue-500 text-white px-4 py-2 font-medium hover:bg-corporate-blue-600 transition-colors text-sm">
                 Apply Now
               </button>
@@ -204,7 +212,8 @@ export default function OpenPositions() {
           Don't See the Right Fit?
         </h3>
         <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-6">
-          We're always looking for talented professionals. Send us your resume and we'll keep you in mind for future opportunities.
+          We're always looking for talented professionals. Send us your resume and we'll keep you in
+          mind for future opportunities.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-corporate-blue-500 text-white px-6 py-3 font-medium hover:bg-corporate-blue-600 transition-colors">

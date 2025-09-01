@@ -41,15 +41,13 @@ export default function Navbar() {
           </Link>
           <div className="flex flex-row gap-8 items-center">
             {/* About Us Dropdown */}
-            <div 
+            <div
               ref={dropdownRef}
               className="relative"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <button
-                className="font-medium text-[14px] leading-[17px] text-gray-900 hover:text-blue-900 transition-colors flex items-center gap-1"
-              >
+              <button className="font-medium text-[14px] leading-[17px] text-gray-900 hover:text-blue-900 transition-colors flex items-center gap-1">
                 About Us
                 <svg
                   className={`w-4 h-4 transition-transform ${aboutDropdownOpen ? 'rotate-180' : ''}`}
@@ -57,10 +55,15 @@ export default function Navbar() {
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
                 </svg>
               </button>
-              
+
               {/* Dropdown Menu */}
               {aboutDropdownOpen && (
                 <div className="absolute top-full left-0 mt-0 w-64 bg-white border border-gray-200 shadow-lg rounded-none py-2 z-50">
@@ -85,7 +88,7 @@ export default function Navbar() {
                 </div>
               )}
             </div>
-            
+
             <Link
               href="/global-presence"
               className="font-medium text-[14px] leading-[17px] text-gray-900 hover:text-blue-900 transition-colors"

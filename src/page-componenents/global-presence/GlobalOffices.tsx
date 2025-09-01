@@ -47,7 +47,7 @@ export default function GlobalOffices() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full max-w-7xl">
-        {regions.map((region, idx) => (
+        {regions.map(region => (
           <div
             key={region.name}
             className="bg-tertiary-blue-50 border border-corporate-grey-100 p-8 hover:shadow-lg transition-all duration-300"
@@ -94,9 +94,7 @@ export default function GlobalOffices() {
 
       <div className="flex flex-col items-center gap-6 mt-16 text-center">
         <div className="bg-corporate-blue-500 text-white px-8 py-4 rounded-none">
-          <h3 className="text-[24px] leading-[29px] font-medium mb-2">
-            Global Statistics
-          </h3>
+          <h3 className="text-[24px] leading-[29px] font-medium mb-2">Global Statistics</h3>
           <div className="flex gap-8 text-sm">
             <div>
               <div className="text-2xl font-bold">60+</div>

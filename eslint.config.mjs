@@ -16,6 +16,7 @@ const eslintConfig = [
       'prettier/prettier': 'error',
       'no-unused-vars': 'warn',
       'no-console': 'warn',
+      'react/no-unescaped-entities': 'off',
     },
   },
 ];

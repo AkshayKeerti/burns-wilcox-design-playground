@@ -4,7 +4,7 @@ export default function SolutionsVariation4() {
   const features = [
     { k: 'Speed', d: 'Rapid quoting and placement' },
     { k: 'Scale', d: 'Capacity for complex risks' },
-    { k: 'Service', d: 'Hands-on claims advocacy' }
+    { k: 'Service', d: 'Hands-on claims advocacy' },
   ];
   return (
     <section className="bg-white">

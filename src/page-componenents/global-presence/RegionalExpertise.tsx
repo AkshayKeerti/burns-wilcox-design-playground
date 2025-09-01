@@ -3,7 +3,8 @@ import Image from 'next/image';
 const expertiseAreas = [
   {
     title: 'MENA Region Specialization',
-    description: 'Deep understanding of Middle Eastern markets, regulatory environments, and cultural nuances',
+    description:
+      'Deep understanding of Middle Eastern markets, regulatory environments, and cultural nuances',
     features: [
       'Islamic finance compliance',
       'Energy sector expertise',
@@ -14,7 +15,8 @@ const expertiseAreas = [
   },
   {
     title: 'European Market Knowledge',
-    description: 'Comprehensive coverage of EU regulations, Brexit implications, and continental business practices',
+    description:
+      'Comprehensive coverage of EU regulations, Brexit implications, and continental business practices',
     features: [
       'EU regulatory compliance',
       'Cross-border solutions',
@@ -25,7 +27,8 @@ const expertiseAreas = [
   },
   {
     title: 'North American Expertise',
-    description: 'Market-leading position with deep understanding of US and Canadian insurance landscapes',
+    description:
+      'Market-leading position with deep understanding of US and Canadian insurance landscapes',
     features: [
       'State-by-state compliance',
       'Federal regulations',
@@ -101,7 +104,8 @@ export default function RegionalExpertise() {
           Global Standards, Local Solutions
         </h3>
         <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-6">
-          Our regional teams maintain the highest global standards while adapting solutions to meet local market requirements, regulatory environments, and cultural expectations.
+          Our regional teams maintain the highest global standards while adapting solutions to meet
+          local market requirements, regulatory environments, and cultural expectations.
         </p>
         <div className="flex justify-center gap-4">
           <button className="bg-corporate-blue-500 text-white px-6 py-3 font-medium hover:bg-corporate-blue-600 transition-colors">

@@ -97,7 +97,9 @@ export default function OfficeLocations() {
                   <span className="bg-corporate-blue-500 text-white text-sm px-3 py-1 font-medium">
                     Main Office
                   </span>
-                  <span className="text-corporate-grey-600 text-sm">{mainOffice.city}, {mainOffice.country}</span>
+                  <span className="text-corporate-grey-600 text-sm">
+                    {mainOffice.city}, {mainOffice.country}
+                  </span>
                 </div>
                 <h3 className="text-[28px] leading-[34px] font-medium text-corporate-grey-900 mb-4">
                   {mainOffice.city} Office
@@ -105,19 +107,27 @@ export default function OfficeLocations() {
                 <div className="space-y-3 mb-6">
                   <div className="flex items-start gap-3">
                     <span className="text-corporate-grey-500 mt-1">📍</span>
-                    <span className="text-[16px] leading-[24px] text-corporate-grey-700">{mainOffice.address}</span>
+                    <span className="text-[16px] leading-[24px] text-corporate-grey-700">
+                      {mainOffice.address}
+                    </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="text-corporate-grey-500 mt-1">📞</span>
-                    <span className="text-[16px] leading-[24px] text-corporate-grey-700">{mainOffice.phone}</span>
+                    <span className="text-[16px] leading-[24px] text-corporate-grey-700">
+                      {mainOffice.phone}
+                    </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="text-corporate-grey-500 mt-1">📧</span>
-                    <span className="text-[16px] leading-[24px] text-corporate-grey-700">{mainOffice.email}</span>
+                    <span className="text-[16px] leading-[24px] text-corporate-grey-700">
+                      {mainOffice.email}
+                    </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="text-corporate-grey-500 mt-1">🕒</span>
-                    <span className="text-[16px] leading-[24px] text-corporate-grey-700">{mainOffice.hours}</span>
+                    <span className="text-[16px] leading-[24px] text-corporate-grey-700">
+                      {mainOffice.hours}
+                    </span>
                   </div>
                 </div>
                 <div className="mb-6">
@@ -160,7 +170,7 @@ export default function OfficeLocations() {
           Regional Offices
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {otherOffices.map((office) => (
+          {otherOffices.map(office => (
             <div
               key={office.city}
               className="bg-white border border-corporate-grey-100 p-6 hover:shadow-lg transition-all duration-300"
@@ -221,7 +231,8 @@ export default function OfficeLocations() {
           Need to Find a Specific Office?
         </h3>
         <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-6">
-          Use our interactive map to find the nearest Burns & Wilcox office and get detailed directions.
+          Use our interactive map to find the nearest Burns & Wilcox office and get detailed
+          directions.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-corporate-blue-500 text-white px-8 py-4 font-medium hover:bg-corporate-blue-600 transition-colors">

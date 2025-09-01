@@ -75,7 +75,7 @@ export default function ContactInfo() {
           Specialized Support Channels
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {supportCategories.map((category) => (
+          {supportCategories.map(category => (
             <div
               key={category.title}
               className="bg-tertiary-blue-50 border border-corporate-grey-100 p-6 hover:shadow-lg transition-all duration-300"
@@ -94,15 +94,21 @@ export default function ContactInfo() {
               <div className="space-y-2 mb-4">
                 <div className="flex items-center gap-2">
                   <span className="text-corporate-grey-500">📞</span>
-                  <span className="text-[14px] leading-[20px] text-corporate-grey-700">{category.phone}</span>
+                  <span className="text-[14px] leading-[20px] text-corporate-grey-700">
+                    {category.phone}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-corporate-grey-500">📧</span>
-                  <span className="text-[14px] leading-[20px] text-corporate-grey-700">{category.email}</span>
+                  <span className="text-[14px] leading-[20px] text-corporate-grey-700">
+                    {category.email}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-corporate-grey-500">🕒</span>
-                  <span className="text-[14px] leading-[20px] text-corporate-grey-700">{category.hours}</span>
+                  <span className="text-[14px] leading-[20px] text-corporate-grey-700">
+                    {category.hours}
+                  </span>
                 </div>
               </div>
               <button className="text-corporate-blue-500 font-medium hover:underline text-sm">
@@ -128,23 +134,16 @@ export default function ContactInfo() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {emergencyContacts.map((contact) => (
-              <div
-                key={contact.type}
-                className="bg-white border border-red-200 p-4 text-center"
-              >
+            {emergencyContacts.map(contact => (
+              <div key={contact.type} className="bg-white border border-red-200 p-4 text-center">
                 <h5 className="text-[16px] leading-[20px] font-medium text-red-800 mb-2">
                   {contact.type}
                 </h5>
-                <div className="text-2xl font-bold text-red-600 mb-2">
-                  {contact.phone}
-                </div>
+                <div className="text-2xl font-bold text-red-600 mb-2">{contact.phone}</div>
                 <div className="text-[12px] leading-[16px] text-red-600 mb-2">
                   Available: {contact.available}
                 </div>
-                <p className="text-[12px] leading-[16px] text-red-700">
-                  {contact.description}
-                </p>
+                <p className="text-[12px] leading-[16px] text-red-700">{contact.description}</p>
               </div>
             ))}
           </div>
@@ -153,9 +152,7 @@ export default function ContactInfo() {
 
       {/* General Contact Information */}
       <div className="bg-corporate-blue-500 text-white p-12 max-w-6xl text-center">
-        <h3 className="text-[33px] leading-[40px] font-medium mb-6">
-          General Contact Information
-        </h3>
+        <h3 className="text-[33px] leading-[40px] font-medium mb-6">General Contact Information</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
             <h4 className="text-[20px] leading-[24px] font-medium mb-3">Headquarters</h4>
@@ -206,7 +203,8 @@ export default function ContactInfo() {
           </button>
         </div>
         <p className="text-[14px] leading-[20px] text-corporate-grey-500">
-          For general inquiries, please allow 24-48 hours for a response. For urgent matters, please use our emergency contact numbers.
+          For general inquiries, please allow 24-48 hours for a response. For urgent matters, please
+          use our emergency contact numbers.
         </p>
       </div>
     </section>

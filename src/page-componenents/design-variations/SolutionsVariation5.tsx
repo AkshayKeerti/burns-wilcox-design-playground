@@ -6,14 +6,18 @@ export default function SolutionsVariation5() {
   const articles = [
     { t: 'Rethinking Cyber Posture', i: '/hero.png', e: 'A pragmatic roadmap for resilience.' },
     { t: 'Parametric Cat Solutions', i: '/hero.jpeg', e: 'Speed and transparency for NatCat.' },
-    { t: 'Supply Chain Continuity', i: '/hero-2.jpg', e: 'Mitigating cascading risks.' }
+    { t: 'Supply Chain Continuity', i: '/hero-2.jpg', e: 'Mitigating cascading risks.' },
   ];
   return (
     <section className="bg-white">
       <div className="h-[56vh] bg-corporate-grey-50 flex items-center">
         <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-5xl md:text-6xl font-semibold text-corporate-grey-900">Insights-led Solutions</h1>
-          <p className="mt-4 text-corporate-grey-700 max-w-3xl">Editorial layout pairing thought leadership with targeted solution paths.</p>
+          <h1 className="text-5xl md:text-6xl font-semibold text-corporate-grey-900">
+            Insights-led Solutions
+          </h1>
+          <p className="mt-4 text-corporate-grey-700 max-w-3xl">
+            Editorial layout pairing thought leadership with targeted solution paths.
+          </p>
         </div>
       </div>
       <div className="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-6">

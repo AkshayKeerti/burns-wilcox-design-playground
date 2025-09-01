@@ -24,19 +24,27 @@ export default function RegionalPresence() {
                 Our Regional Footprint
               </h3>
               <p className="text-[18px] leading-[27px] text-corporate-grey-700 mb-4">
-                Burns & Wilcox has established a strong presence across the Middle East, serving clients in six key countries with specialized insurance solutions tailored to local market needs.
+                Burns & Wilcox has established a strong presence across the Middle East, serving
+                clients in six key countries with specialized insurance solutions tailored to local
+                market needs.
               </p>
               <p className="text-[16px] leading-[24px] text-corporate-grey-700 mb-4">
-                From our regional headquarters in Dubai to our growing presence in Saudi Arabia, Qatar, Kuwait, Egypt, and Oman, we bring global expertise with deep local market knowledge.
+                From our regional headquarters in Dubai to our growing presence in Saudi Arabia,
+                Qatar, Kuwait, Egypt, and Oman, we bring global expertise with deep local market
+                knowledge.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-corporate-blue-500 rounded-full"></div>
-                  <span className="text-[16px] leading-[20px] text-corporate-grey-700">United Arab Emirates</span>
+                  <span className="text-[16px] leading-[20px] text-corporate-grey-700">
+                    United Arab Emirates
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-corporate-blue-500 rounded-full"></div>
-                  <span className="text-[16px] leading-[20px] text-corporate-grey-700">Saudi Arabia</span>
+                  <span className="text-[16px] leading-[20px] text-corporate-grey-700">
+                    Saudi Arabia
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-corporate-blue-500 rounded-full"></div>
@@ -75,9 +83,7 @@ export default function RegionalPresence() {
 
       {/* Simple Statistics */}
       <div className="bg-corporate-blue-500 text-white p-12 max-w-6xl text-center">
-        <h3 className="text-[33px] leading-[40px] font-medium mb-8">
-          Middle East by the Numbers
-        </h3>
+        <h3 className="text-[33px] leading-[40px] font-medium mb-8">Middle East by the Numbers</h3>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="text-4xl font-bold mb-2">6</div>
@@ -97,7 +103,8 @@ export default function RegionalPresence() {
           </div>
         </div>
         <p className="text-[18px] leading-[27px] mb-8 max-w-4xl mx-auto">
-          Our deep regional knowledge combined with global expertise enables us to deliver insurance solutions that understand the unique challenges and opportunities of the Middle East.
+          Our deep regional knowledge combined with global expertise enables us to deliver insurance
+          solutions that understand the unique challenges and opportunities of the Middle East.
         </p>
         <button className="bg-white text-corporate-blue-500 px-8 py-4 font-medium hover:bg-gray-100 transition-colors">
           Contact Regional Team

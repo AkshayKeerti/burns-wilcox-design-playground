@@ -14,7 +14,7 @@ const careerPaths = [
     growth: 'Senior Underwriter → Underwriting Manager → Director',
     image: '/hero-1.jpg',
     color: 'from-blue-500 to-blue-600',
-    requirements: ['Bachelor\'s degree', 'Strong analytical skills', 'Attention to detail']
+    requirements: ["Bachelor's degree", 'Strong analytical skills', 'Attention to detail'],
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const careerPaths = [
     growth: 'Account Executive → Sales Manager → VP of Sales',
     image: '/hero-2.jpg',
     color: 'from-green-500 to-green-600',
-    requirements: ['Sales experience', 'Client relationship skills', 'Industry knowledge']
+    requirements: ['Sales experience', 'Client relationship skills', 'Industry knowledge'],
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const careerPaths = [
     growth: 'Claims Manager → Claims Director → VP of Claims',
     image: '/hero-3.jpg',
     color: 'from-purple-500 to-purple-600',
-    requirements: ['Claims experience', 'Leadership skills', 'Technical expertise']
+    requirements: ['Claims experience', 'Leadership skills', 'Technical expertise'],
   },
   {
     id: 4,
@@ -50,8 +50,8 @@ const careerPaths = [
     growth: 'Developer → Tech Lead → CTO',
     image: '/hero-1.jpg',
     color: 'from-orange-500 to-orange-600',
-    requirements: ['Technical background', 'Problem-solving', 'Innovation mindset']
-  }
+    requirements: ['Technical background', 'Problem-solving', 'Innovation mindset'],
+  },
 ];
 
 const benefits = [
@@ -59,26 +59,26 @@ const benefits = [
     icon: '🏢',
     title: 'Global Opportunities',
     description: 'Work across 60+ offices worldwide',
-    color: 'bg-blue-500'
+    color: 'bg-blue-500',
   },
   {
     icon: '📚',
     title: 'Continuous Learning',
     description: 'Professional development and certifications',
-    color: 'bg-green-500'
+    color: 'bg-green-500',
   },
   {
     icon: '💼',
     title: 'Competitive Benefits',
     description: 'Health, retirement, and wellness programs',
-    color: 'bg-purple-500'
+    color: 'bg-purple-500',
   },
   {
     icon: '🤝',
     title: 'Collaborative Culture',
     description: 'Team-based approach to success',
-    color: 'bg-orange-500'
-  }
+    color: 'bg-orange-500',
+  },
 ];
 
 export default function CareersVariation3() {
@@ -91,7 +91,7 @@ export default function CareersVariation3() {
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
-      
+
       if (benefitsRef.current) {
         const rect = benefitsRef.current.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom > 0) {
@@ -105,13 +105,16 @@ export default function CareersVariation3() {
   }, []);
 
   const parallaxStyle = {
-    transform: `translateY(${scrollY * 0.3}px)`
+    transform: `translateY(${scrollY * 0.3}px)`,
   };
 
   return (
     <section className="bg-white w-full overflow-hidden">
       {/* Interactive Hero Section */}
-      <div ref={heroRef} className="relative h-screen flex items-center justify-center overflow-hidden">
+      <div
+        ref={heroRef}
+        className="relative h-screen flex items-center justify-center overflow-hidden"
+      >
         {/* Background with Parallax */}
         <div className="absolute inset-0" style={parallaxStyle}>
           <Image
@@ -123,7 +126,7 @@ export default function CareersVariation3() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-corporate-blue-900/90 via-corporate-blue-800/70 to-transparent"></div>
         </div>
-        
+
         {/* Floating Content */}
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-8">
           <div className="mb-12">
@@ -131,7 +134,7 @@ export default function CareersVariation3() {
               <div className="w-2 h-2 bg-corporate-blue-400 rounded-full animate-pulse"></div>
               <span className="text-sm font-medium">Join Our Team</span>
             </div>
-            
+
             <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-corporate-blue-200">
                 Build Your
@@ -140,12 +143,12 @@ export default function CareersVariation3() {
                 Future
               </span>
             </h1>
-            
+
             <p className="text-xl md:text-2xl font-light text-white/90 max-w-3xl mx-auto leading-relaxed mb-8">
               Join a team of 2,300+ insurance professionals across the globe
             </p>
           </div>
-          
+
           {/* Interactive Career Path Selector */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             {careerPaths.map((path, index) => (
@@ -162,7 +165,7 @@ export default function CareersVariation3() {
               </button>
             ))}
           </div>
-          
+
           {/* Active Career Path Info */}
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-2">{careerPaths[selectedPath].title}</h3>
@@ -170,11 +173,13 @@ export default function CareersVariation3() {
             <div className="flex items-center justify-center gap-6 text-sm">
               <span className="text-corporate-blue-200">{careerPaths[selectedPath].level}</span>
               <span className="text-white/60">•</span>
-              <span className="text-corporate-blue-200">{careerPaths[selectedPath].experience}</span>
+              <span className="text-corporate-blue-200">
+                {careerPaths[selectedPath].experience}
+              </span>
             </div>
           </div>
         </div>
-        
+
         {/* Floating Elements */}
         <div className="absolute top-20 left-20 w-32 h-32 bg-corporate-blue-400/20 rounded-full blur-xl animate-pulse"></div>
         <div className="absolute bottom-20 right-20 w-24 h-24 bg-corporate-blue-300/20 rounded-full blur-xl animate-pulse delay-1000"></div>
@@ -191,68 +196,79 @@ export default function CareersVariation3() {
               Click on any career path to discover opportunities and requirements
             </p>
           </div>
-          
+
           <div className="space-y-16">
             {careerPaths.map((path, index) => (
-              <div key={path.id} className={`flex flex-col lg:flex-row items-center gap-16 ${
-                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-              }`}>
+              <div
+                key={path.id}
+                className={`flex flex-col lg:flex-row items-center gap-16 ${
+                  index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                }`}
+              >
                 <div className="flex-1">
-                  <div 
+                  <div
                     className={`p-8 rounded-2xl border-l-4 transition-all duration-700 cursor-pointer transform hover:scale-105 ${
-                      selectedPath === index 
-                        ? 'border-corporate-blue-500 bg-corporate-blue-50 shadow-2xl' 
+                      selectedPath === index
+                        ? 'border-corporate-blue-500 bg-corporate-blue-50 shadow-2xl'
                         : 'border-corporate-grey-200 hover:border-corporate-blue-300 hover:shadow-xl'
                     }`}
                     onClick={() => setSelectedPath(index)}
                   >
                     <div className="mb-6">
-                      <span className={`inline-block bg-gradient-to-r ${path.color} text-white px-4 py-2 rounded-full text-sm font-medium`}>
+                      <span
+                        className={`inline-block bg-gradient-to-r ${path.color} text-white px-4 py-2 rounded-full text-sm font-medium`}
+                      >
                         {path.level}
                       </span>
                       <span className="ml-4 text-corporate-grey-500 text-sm">
                         {path.experience}
                       </span>
                     </div>
-                    
+
                     <h3 className="text-3xl font-bold text-corporate-grey-900 mb-4">
                       {path.title}
                     </h3>
-                    
+
                     <p className="text-lg text-corporate-grey-600 mb-6 leading-relaxed">
                       {path.description}
                     </p>
-                    
+
                     <div className="mb-6">
                       <h4 className="font-semibold text-corporate-grey-800 mb-3">Key Skills:</h4>
                       <div className="flex flex-wrap gap-2">
-                        {path.skills.map((skill) => (
-                          <span key={skill} className="bg-corporate-blue-50 text-corporate-blue-700 text-sm px-3 py-1 rounded-full hover:bg-corporate-blue-100 transition-colors">
+                        {path.skills.map(skill => (
+                          <span
+                            key={skill}
+                            className="bg-corporate-blue-50 text-corporate-blue-700 text-sm px-3 py-1 rounded-full hover:bg-corporate-blue-100 transition-colors"
+                          >
                             {skill}
                           </span>
                         ))}
                       </div>
                     </div>
-                    
+
                     <div className="mb-6">
                       <h4 className="font-semibold text-corporate-grey-800 mb-3">Requirements:</h4>
                       <ul className="space-y-1">
-                        {path.requirements.map((req) => (
-                          <li key={req} className="text-sm text-corporate-grey-600 flex items-center gap-2">
+                        {path.requirements.map(req => (
+                          <li
+                            key={req}
+                            className="text-sm text-corporate-grey-600 flex items-center gap-2"
+                          >
                             <span className="w-2 h-2 bg-corporate-blue-400 rounded-full"></span>
                             {req}
                           </li>
                         ))}
                       </ul>
                     </div>
-                    
+
                     <div className="border-t border-corporate-grey-100 pt-4">
                       <h4 className="font-semibold text-corporate-grey-800 mb-2">Career Growth:</h4>
                       <p className="text-sm text-corporate-grey-600">{path.growth}</p>
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="flex-1">
                   <div className="relative h-80 rounded-2xl overflow-hidden shadow-2xl group">
                     <Image
@@ -262,7 +278,7 @@ export default function CareersVariation3() {
                       className="object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                    
+
                     {/* Interactive Overlay */}
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500 flex items-center justify-center">
                       <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
@@ -283,27 +299,32 @@ export default function CareersVariation3() {
       <div ref={benefitsRef} className="py-24 px-8 bg-corporate-blue-900 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-            backgroundSize: '60px 60px'
-          }}></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+              backgroundSize: '60px 60px',
+            }}
+          ></div>
         </div>
-        
+
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-20">
             <h2 className="text-5xl font-bold text-white mb-6">
               Why Choose <span className="text-corporate-blue-200">Burns & Wilcox</span>?
             </h2>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
-              <div 
-                key={benefit.title} 
+              <div
+                key={benefit.title}
                 className="text-center group cursor-pointer transform hover:scale-110 transition-all duration-500"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
-                <div className={`text-6xl mb-6 group-hover:scale-110 transition-transform duration-500 ${benefit.color}`}>
+                <div
+                  className={`text-6xl mb-6 group-hover:scale-110 transition-transform duration-500 ${benefit.color}`}
+                >
                   {benefit.icon}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-corporate-blue-200 transition-colors">

@@ -24,11 +24,12 @@ export default function CareersHero() {
             </span>
             <h1 className="font-bold text-4xl md:text-6xl leading-tight md:leading-[1.1]">
               Build Your Career
-                  <br />
-                  With Us
+              <br />
+              With Us
             </h1>
             <p className="text-xl md:text-2xl font-normal text-white/90 max-w-3xl">
-              Join a global team of insurance professionals committed to excellence, innovation, and making a difference in people's lives
+              Join a global team of insurance professionals committed to excellence, innovation, and
+              making a difference in people's lives
             </p>
           </div>
           <div className="flex gap-4 mt-8">
