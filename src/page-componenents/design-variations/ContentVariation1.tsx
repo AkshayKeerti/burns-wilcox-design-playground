@@ -1,27 +1,18 @@
 'use client';
 
 import {
-  Shield,
   CheckCircle,
-  Users,
   Star,
   ArrowRight,
   Phone,
   Mail,
-  MapPin,
   Clock,
-  Award,
-  TrendingUp,
-  Zap,
-  Lock,
-  AlertTriangle,
   Database,
   Globe,
   FileText,
-  BarChart3
+  Lock
 } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function ContentVariation1() {
   return (
@@ -38,9 +29,9 @@ export default function ContentVariation1() {
               Cyber Liability Insurance
             </h1>
             <p className="text-xl mb-8 text-white/90 leading-relaxed font-light">
-              Protect your business from the growing threat of cyber attacks, data breaches, and digital risks. 
-              Our comprehensive cyber liability coverage provides financial protection and expert guidance in the 
-              event of a cyber incident.
+              Protect your business from the growing threat of cyber attacks, data breaches, and
+              digital risks. Our comprehensive cyber liability coverage provides financial
+              protection and expert guidance in the event of a cyber incident.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-white text-corporate-blue-900 px-8 py-3 rounded-lg font-light hover:bg-corporate-grey-50 transition-colors flex items-center justify-center">
@@ -62,8 +53,12 @@ export default function ContentVariation1() {
             <div className="bg-corporate-grey-200 rounded-lg h-64 flex items-center justify-center mb-8">
               <div className="text-center">
                 <Globe className="w-16 h-16 text-corporate-grey-600 mx-auto mb-4" />
-                <p className="text-corporate-grey-700 font-light">Cyber Security Visualization</p>
-                <p className="text-corporate-grey-500 text-sm">Image placeholder for cyber security concept</p>
+                <p className="text-corporate-grey-700 font-light">
+                  Cyber Security Visualization
+                </p>
+                <p className="text-corporate-grey-500 text-sm">
+                  Image placeholder for cyber security concept
+                </p>
               </div>
             </div>
           </div>
@@ -79,10 +74,11 @@ export default function ContentVariation1() {
               Understanding Cyber Liability Insurance
             </h2>
             <p className="text-lg text-corporate-grey-700 mb-6 leading-relaxed font-light">
-              In today's digital landscape, businesses of all sizes face unprecedented cyber risks. From sophisticated 
-              ransomware attacks to accidental data breaches, the financial and reputational consequences can be devastating. 
-              Cyber Liability Insurance is designed to protect your business from these modern threats by providing 
-              comprehensive coverage for both first-party and third-party losses.
+              In today's digital landscape, businesses of all sizes face unprecedented cyber risks.
+              From sophisticated ransomware attacks to accidental data breaches, the financial and
+              reputational consequences can be devastating. Cyber Liability Insurance is designed to
+              protect your business from these modern threats by providing comprehensive coverage
+              for both first-party and third-party losses.
             </p>
 
             <div className="bg-corporate-grey-50 p-6 rounded-lg mb-8 border-l-4 border-corporate-blue-500">
@@ -90,9 +86,10 @@ export default function ContentVariation1() {
                 Why Cyber Insurance is Essential
               </h3>
               <p className="text-corporate-grey-800 font-light">
-                According to recent studies, 60% of small businesses close within 6 months of experiencing a cyber attack. 
-                The average cost of a data breach in 2024 exceeded $4.45 million, making cyber insurance not just a 
-                recommendation, but a critical business necessity.
+                According to recent studies, 60% of small businesses close within 6 months of
+                experiencing a cyber attack. The average cost of a data breach in 2024 exceeded
+                $4.45 million, making cyber insurance not just a recommendation, but a critical
+                business necessity.
               </p>
             </div>
 
@@ -104,10 +101,13 @@ export default function ContentVariation1() {
                 <div className="flex items-start">
                   <Database className="w-8 h-8 text-corporate-blue-500 mt-1 mr-4 flex-shrink-0" />
                   <div>
-                    <h4 className="font-light text-corporate-grey-900 text-lg mb-2">Data Breach Response</h4>
+                    <h4 className="font-light text-corporate-grey-900 text-lg mb-2">
+                      Data Breach Response
+                    </h4>
                     <p className="text-corporate-grey-700 mb-3 font-light">
-                      Covers the costs associated with responding to a data breach, including forensic investigations, 
-                      legal counsel, notification requirements, and credit monitoring services for affected individuals.
+                      Covers the costs associated with responding to a data breach, including
+                      forensic investigations, legal counsel, notification requirements, and credit
+                      monitoring services for affected individuals.
                     </p>
                     <ul className="text-corporate-grey-600 space-y-1 font-light">
                       <li>• Forensic investigation and analysis</li>
@@ -123,10 +123,13 @@ export default function ContentVariation1() {
                 <div className="flex items-start">
                   <Lock className="w-8 h-8 text-corporate-blue-500 mt-1 mr-4 flex-shrink-0" />
                   <div>
-                    <h4 className="font-light text-corporate-grey-900 text-lg mb-2">Ransomware Protection</h4>
+                    <h4 className="font-light text-corporate-grey-900 text-lg mb-2">
+                      Ransomware Protection
+                    </h4>
                     <p className="text-corporate-grey-700 mb-3 font-light">
-                      Provides coverage for ransomware attacks, including ransom payments, data recovery costs, 
-                      and business interruption losses resulting from cyber extortion.
+                      Provides coverage for ransomware attacks, including ransom payments, data
+                      recovery costs, and business interruption losses resulting from cyber
+                      extortion.
                     </p>
                     <ul className="text-corporate-grey-600 space-y-1 font-light">
                       <li>• Ransom payment coverage (where legal)</li>
@@ -142,10 +145,12 @@ export default function ContentVariation1() {
                 <div className="flex items-start">
                   <FileText className="w-8 h-8 text-corporate-blue-500 mt-1 mr-4 flex-shrink-0" />
                   <div>
-                    <h4 className="font-light text-corporate-grey-900 text-lg mb-2">Legal Liability Protection</h4>
+                    <h4 className="font-light text-corporate-grey-900 text-lg mb-2">
+                      Legal Liability Protection
+                    </h4>
                     <p className="text-corporate-grey-700 mb-3 font-light">
-                      Covers legal expenses and damages arising from lawsuits filed by customers, clients, or 
-                      third parties affected by a cyber incident or data breach.
+                      Covers legal expenses and damages arising from lawsuits filed by customers,
+                      clients, or third parties affected by a cyber incident or data breach.
                     </p>
                     <ul className="text-corporate-grey-600 space-y-1 font-light">
                       <li>• Defense costs and legal fees</li>
@@ -162,37 +167,38 @@ export default function ContentVariation1() {
               Industry-Specific Cyber Risks
             </h3>
             <p className="text-corporate-grey-700 mb-6 leading-relaxed font-light">
-              Different industries face unique cyber threats and regulatory requirements. Our cyber liability 
-              insurance can be tailored to address the specific risks your business faces:
+              Different industries face unique cyber threats and regulatory requirements. Our cyber
+              liability insurance can be tailored to address the specific risks your business
+              faces:
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-corporate-grey-50 p-6 rounded-lg border border-corporate-grey-300">
                 <h4 className="font-light text-corporate-blue-900 mb-3">Healthcare</h4>
                 <p className="text-corporate-grey-800 text-sm font-light">
-                  HIPAA compliance, patient data protection, medical device security, and regulatory penalties 
-                  for healthcare data breaches.
+                  HIPAA compliance, patient data protection, medical device security, and
+                  regulatory penalties for healthcare data breaches.
                 </p>
               </div>
               <div className="bg-corporate-grey-50 p-6 rounded-lg border border-corporate-grey-300">
                 <h4 className="font-light text-corporate-blue-900 mb-3">Financial Services</h4>
                 <p className="text-corporate-grey-800 text-sm font-light">
-                  Banking regulations, customer financial data protection, wire transfer fraud, and 
+                  Banking regulations, customer financial data protection, wire transfer fraud, and
                   regulatory compliance requirements.
                 </p>
               </div>
               <div className="bg-corporate-grey-50 p-6 rounded-lg border border-corporate-grey-300">
                 <h4 className="font-light text-corporate-blue-900 mb-3">Retail & E-commerce</h4>
                 <p className="text-corporate-grey-800 text-sm font-light">
-                  Payment card data protection, online transaction security, customer personal information, 
-                  and PCI DSS compliance.
+                  Payment card data protection, online transaction security, customer personal
+                  information, and PCI DSS compliance.
                 </p>
               </div>
               <div className="bg-corporate-grey-50 p-6 rounded-lg border border-corporate-grey-300">
                 <h4 className="font-light text-corporate-blue-900 mb-3">Manufacturing</h4>
                 <p className="text-corporate-grey-800 text-sm font-light">
-                  Industrial control systems, intellectual property protection, supply chain security, 
-                  and operational technology risks.
+                  Industrial control systems, intellectual property protection, supply chain
+                  security, and operational technology risks.
                 </p>
               </div>
             </div>
@@ -201,21 +207,28 @@ export default function ContentVariation1() {
               Cyber Risk Assessment & Prevention
             </h3>
             <p className="text-corporate-grey-700 mb-6 leading-relaxed font-light">
-              Beyond insurance coverage, we provide comprehensive cyber risk assessment services to help 
-              identify vulnerabilities and implement preventive measures. Our cybersecurity experts work 
-              with your team to develop robust security protocols and incident response plans.
+              Beyond insurance coverage, we provide comprehensive cyber risk assessment services to
+              help identify vulnerabilities and implement preventive measures. Our cybersecurity
+              experts work with your team to develop robust security protocols and incident
+              response plans.
             </p>
 
             <div className="bg-corporate-grey-50 p-6 rounded-lg mb-8">
-              <h4 className="font-light text-corporate-grey-900 mb-4">Prevention Strategies Include:</h4>
+              <h4 className="font-light text-corporate-grey-900 mb-4">
+                Prevention Strategies Include:
+              </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-corporate-blue-500 mr-3" />
-                  <span className="text-corporate-grey-700 font-light">Employee cybersecurity training</span>
+                  <span className="text-corporate-grey-700 font-light">
+                    Employee cybersecurity training
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-corporate-blue-500 mr-3" />
-                  <span className="text-corporate-grey-700 font-light">Multi-factor authentication</span>
+                  <span className="text-corporate-grey-700 font-light">
+                    Multi-factor authentication
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-corporate-blue-500 mr-3" />
@@ -223,15 +236,21 @@ export default function ContentVariation1() {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-corporate-blue-500 mr-3" />
-                  <span className="text-corporate-grey-700 font-light">Data encryption protocols</span>
+                  <span className="text-corporate-grey-700 font-light">
+                    Data encryption protocols
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-corporate-blue-500 mr-3" />
-                  <span className="text-corporate-grey-700 font-light">Backup and recovery systems</span>
+                  <span className="text-corporate-grey-700 font-light">
+                    Backup and recovery systems
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-corporate-blue-500 mr-3" />
-                  <span className="text-corporate-grey-700 font-light">Incident response planning</span>
+                  <span className="text-corporate-grey-700 font-light">
+                    Incident response planning
+                  </span>
                 </div>
               </div>
             </div>
@@ -266,19 +285,27 @@ export default function ContentVariation1() {
 
             {/* Statistics */}
             <div className="bg-white border border-corporate-grey-200 p-6 rounded-lg mb-8 shadow-sm">
-              <h3 className="text-xl font-light text-corporate-grey-900 mb-4">Cyber Attack Statistics</h3>
+              <h3 className="text-xl font-light text-corporate-grey-900 mb-4">
+                Cyber Attack Statistics
+              </h3>
               <div className="space-y-4">
                 <div className="text-center p-4 bg-corporate-grey-50 rounded-lg border border-corporate-grey-300">
                   <div className="text-2xl font-light text-corporate-blue-900">43%</div>
-                  <div className="text-corporate-grey-800 text-sm font-light">of cyber attacks target small businesses</div>
+                  <div className="text-corporate-grey-800 text-sm font-light">
+                    of cyber attacks target small businesses
+                  </div>
                 </div>
                 <div className="text-center p-4 bg-corporate-grey-50 rounded-lg border border-corporate-grey-300">
                   <div className="text-2xl font-light text-corporate-blue-900">$4.45M</div>
-                  <div className="text-corporate-grey-800 text-sm font-light">average cost of a data breach</div>
+                  <div className="text-corporate-grey-800 text-sm font-light">
+                    average cost of a data breach
+                  </div>
                 </div>
                 <div className="text-center p-4 bg-corporate-grey-50 rounded-lg border border-corporate-grey-300">
                   <div className="text-2xl font-light text-corporate-blue-900">287 days</div>
-                  <div className="text-corporate-grey-800 text-sm font-light">average time to identify a breach</div>
+                  <div className="text-corporate-grey-800 text-sm font-light">
+                    average time to identify a breach
+                  </div>
                 </div>
               </div>
             </div>
@@ -291,8 +318,9 @@ export default function ContentVariation1() {
                 ))}
               </div>
               <p className="text-white/90 mb-4 italic font-light">
-                "When our company experienced a ransomware attack, Burns & Wilcox cyber insurance 
-                coverage was invaluable. Their expert team guided us through the entire recovery process."
+                "When our company experienced a ransomware attack, Burns & Wilcox cyber insurance
+                coverage was invaluable. Their expert team guided us through the entire recovery
+                process."
               </p>
               <div className="flex items-center">
                 <div className="w-10 h-10 bg-corporate-blue-900 rounded-full flex items-center justify-center mr-3">
@@ -307,21 +335,35 @@ export default function ContentVariation1() {
 
             {/* Resources */}
             <div className="bg-white border border-corporate-grey-200 p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-light text-corporate-grey-900 mb-4">Cyber Security Resources</h3>
+              <h3 className="text-xl font-light text-corporate-grey-900 mb-4">
+                Cyber Security Resources
+              </h3>
               <div className="space-y-3">
-                <Link href="#" className="flex items-center text-corporate-blue-900 hover:text-corporate-blue-700 font-light">
+                <Link
+                  href="#"
+                  className="flex items-center text-corporate-blue-900 hover:text-corporate-blue-700 font-light"
+                >
                   <FileText className="w-4 h-4 mr-2" />
                   <span>Cyber Risk Assessment Guide</span>
                 </Link>
-                <Link href="#" className="flex items-center text-corporate-blue-900 hover:text-corporate-blue-700 font-light">
+                <Link
+                  href="#"
+                  className="flex items-center text-corporate-blue-900 hover:text-corporate-blue-700 font-light"
+                >
                   <FileText className="w-4 h-4 mr-2" />
                   <span>Incident Response Checklist</span>
                 </Link>
-                <Link href="#" className="flex items-center text-corporate-blue-900 hover:text-corporate-blue-700 font-light">
+                <Link
+                  href="#"
+                  className="flex items-center text-corporate-blue-900 hover:text-corporate-blue-700 font-light"
+                >
                   <FileText className="w-4 h-4 mr-2" />
                   <span>Employee Training Materials</span>
                 </Link>
-                <Link href="#" className="flex items-center text-corporate-blue-900 hover:text-corporate-blue-700 font-light">
+                <Link
+                  href="#"
+                  className="flex items-center text-corporate-blue-900 hover:text-corporate-blue-700 font-light"
+                >
                   <FileText className="w-4 h-4 mr-2" />
                   <span>Regulatory Compliance Guide</span>
                 </Link>
@@ -338,14 +380,17 @@ export default function ContentVariation1() {
             Protect Your Digital Assets Today
           </h2>
           <p className="text-xl mb-8 text-white/90 font-light">
-            Don't become another cyber attack statistic. Get comprehensive cyber liability protection 
-            from Burns & Wilcox.
+            Don't become another cyber attack statistic. Get comprehensive cyber liability
+            protection from Burns & Wilcox.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button className="bg-white text-corporate-blue-900 px-8 py-3 rounded-lg font-light hover:bg-corporate-grey-50 transition-colors border-2 border-corporate-blue-900">
               Get Cyber Protection
             </button>
-            <Link href="/solutions" className="border-2 border-white text-white px-8 py-3 rounded-lg font-light hover:bg-white hover:text-corporate-blue-900 transition-colors">
+            <Link
+              href="/solutions"
+              className="border-2 border-white text-white px-8 py-3 rounded-lg font-light hover:bg-white hover:text-corporate-blue-900 transition-colors"
+            >
               View All Solutions
             </Link>
           </div>
