@@ -10,7 +10,7 @@ import {
   Database,
   Globe,
   FileText,
-  Lock
+  Lock,
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -25,9 +25,7 @@ export default function ContentVariation3() {
               <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
               Content Design - Cyber Liability Insurance
             </div>
-            <h1 className="text-5xl font-light mb-6 tracking-wide">
-              Cyber Liability Insurance
-            </h1>
+            <h1 className="text-5xl font-light mb-6 tracking-wide">Cyber Liability Insurance</h1>
             <p className="text-xl mb-8 text-white/90 leading-relaxed font-light">
               Protect your business from the growing threat of cyber attacks, data breaches, and
               digital risks. Our comprehensive cyber liability coverage provides financial
@@ -53,9 +51,7 @@ export default function ContentVariation3() {
             <div className="bg-gradient-to-r from-corporate-blue-100 to-corporate-grey-100 rounded-lg h-64 flex items-center justify-center mb-8 border border-corporate-blue-200">
               <div className="text-center">
                 <Globe className="w-16 h-16 text-corporate-blue-600 mx-auto mb-4" />
-                <p className="text-corporate-blue-800 font-light">
-                  Cyber Security Visualization
-                </p>
+                <p className="text-corporate-blue-800 font-light">Cyber Security Visualization</p>
                 <p className="text-corporate-blue-600 text-sm">
                   Image placeholder for cyber security concept
                 </p>
@@ -232,7 +228,9 @@ export default function ContentVariation3() {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-corporate-blue-600 mr-3" />
-                  <span className="text-corporate-grey-700 font-light">Regular security audits</span>
+                  <span className="text-corporate-grey-700 font-light">
+                    Regular security audits
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-corporate-blue-600 mr-3" />
