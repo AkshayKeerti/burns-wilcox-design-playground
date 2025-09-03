@@ -235,7 +235,7 @@ export default function GlobalPresenceVariation3() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div key={stat.label} className="text-center group">
                 <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-500">
                   {stat.icon}

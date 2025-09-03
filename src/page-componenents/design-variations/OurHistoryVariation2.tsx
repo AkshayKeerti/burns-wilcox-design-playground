@@ -11,7 +11,7 @@ const historyStats = [
 ];
 
 export default function OurHistoryVariation2() {
-  const [activeEra, setActiveEra] = useState(0);
+
 
   return (
     <section className="bg-white w-full">
@@ -53,7 +53,7 @@ export default function OurHistoryVariation2() {
       <div className="py-24 px-8">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-            {historyStats.map((stat, index) => (
+            {historyStats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-4xl mb-4 text-corporate-grey-400">{stat.icon}</div>
                 <div className="text-3xl font-light text-corporate-grey-900 mb-2">

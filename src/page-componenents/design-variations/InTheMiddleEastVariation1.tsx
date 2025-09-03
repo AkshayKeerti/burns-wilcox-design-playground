@@ -91,7 +91,7 @@ export default function InTheMiddleEastVariation1() {
       <div className="py-20 px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {regionalStats.map((stat, index) => (
+            {regionalStats.map((stat) => (
               <div
                 key={stat.label}
                 className="bg-white rounded-2xl p-8 text-center shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
@@ -119,7 +119,7 @@ export default function InTheMiddleEastVariation1() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {regionalServices.map((service, index) => (
+            {regionalServices.map((service) => (
               <div
                 key={service.title}
                 className={`bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:-translate-y-2 ${

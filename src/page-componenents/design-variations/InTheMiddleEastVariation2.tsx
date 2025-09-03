@@ -88,7 +88,7 @@ export default function InTheMiddleEastVariation2() {
       <div className="py-24 px-8">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-            {regionalStats.map((stat, index) => (
+            {regionalStats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-4xl mb-4 text-corporate-grey-400">{stat.icon}</div>
                 <div className="text-3xl font-light text-corporate-grey-900 mb-2">
@@ -117,7 +117,7 @@ export default function InTheMiddleEastVariation2() {
           </div>
 
           <div className="space-y-8">
-            {regionalServices.map((service, index) => (
+            {regionalServices.map((service) => (
               <div
                 key={service.title}
                 className={`bg-white p-8 border-l-4 transition-all duration-500 cursor-pointer hover:shadow-lg ${

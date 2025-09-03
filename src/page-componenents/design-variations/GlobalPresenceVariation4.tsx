@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const globalStats = [
   { number: '60+', label: 'Global Offices', icon: '🌍' },
@@ -85,7 +85,7 @@ export default function GlobalPresenceVariation4() {
 
           {/* Bold Region Selector */}
           <div className="flex flex-wrap justify-center gap-6 mb-12">
-            {regions.map((region, index) => (
+            {regions.map((region) => (
               <button
                 key={region.name}
                 onClick={() => setActiveRegion(index)}
@@ -147,7 +147,7 @@ export default function GlobalPresenceVariation4() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-            {globalStats.map((stat, index) => (
+            {globalStats.map((stat) => (
               <div key={stat.label} className="text-center group">
                 <div className="text-8xl mb-8 group-hover:scale-125 transition-transform duration-700">
                   {stat.icon}
@@ -181,7 +181,7 @@ export default function GlobalPresenceVariation4() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            {regions.map((region, index) => (
+            {regions.map((region) => (
               <div
                 key={region.name}
                 className={`group relative overflow-hidden rounded-3xl shadow-2xl cursor-pointer transform hover:-translate-y-6 transition-all duration-700 ${

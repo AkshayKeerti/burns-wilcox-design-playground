@@ -164,16 +164,15 @@ export default function ContentVariation1() {
             </h3>
             <p className="text-corporate-grey-700 mb-6 leading-relaxed font-light">
               Different industries face unique cyber threats and regulatory requirements. Our cyber
-              liability insurance can be tailored to address the specific risks your business
-              faces:
+              liability insurance can be tailored to address the specific risks your business faces:
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-corporate-grey-50 p-6 rounded-lg border border-corporate-grey-300">
                 <h4 className="font-light text-corporate-blue-900 mb-3">Healthcare</h4>
                 <p className="text-corporate-grey-800 text-sm font-light">
-                  HIPAA compliance, patient data protection, medical device security, and
-                  regulatory penalties for healthcare data breaches.
+                  HIPAA compliance, patient data protection, medical device security, and regulatory
+                  penalties for healthcare data breaches.
                 </p>
               </div>
               <div className="bg-corporate-grey-50 p-6 rounded-lg border border-corporate-grey-300">
@@ -205,8 +204,8 @@ export default function ContentVariation1() {
             <p className="text-corporate-grey-700 mb-6 leading-relaxed font-light">
               Beyond insurance coverage, we provide comprehensive cyber risk assessment services to
               help identify vulnerabilities and implement preventive measures. Our cybersecurity
-              experts work with your team to develop robust security protocols and incident
-              response plans.
+              experts work with your team to develop robust security protocols and incident response
+              plans.
             </p>
 
             <div className="bg-corporate-grey-50 p-6 rounded-lg mb-8">

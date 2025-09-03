@@ -101,7 +101,7 @@ export default function ContactVariation4() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-6 mb-12">
-            {contactMethods.map((method, index) => (
+            {contactMethods.map((method) => (
               <button
                 key={method.id}
                 onClick={() => setSelectedMethod(method.id)}

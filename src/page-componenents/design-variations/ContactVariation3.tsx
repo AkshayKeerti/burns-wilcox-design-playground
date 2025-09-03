@@ -73,7 +73,6 @@ export default function ContactVariation3() {
   const [formData, setFormData] = useState(quickContact);
   const [selectedMethod, setSelectedMethod] = useState('phone');
   const [selectedOffice, setSelectedOffice] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const heroRef = useRef<HTMLDivElement>(null);
   const officesRef = useRef<HTMLDivElement>(null);
@@ -84,9 +83,7 @@ export default function ContactVariation3() {
 
       if (officesRef.current) {
         const rect = officesRef.current.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          setIsVisible(true);
-        }
+        // Animation logic can be added here if needed
       }
     };
 
@@ -109,7 +106,7 @@ export default function ContactVariation3() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    // console.log('Form submitted:', formData);
   };
 
   return (
@@ -155,7 +152,7 @@ export default function ContactVariation3() {
 
           {/* Interactive Contact Method Selector */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {contactMethods.map((method, index) => (
+            {contactMethods.map((method) => (
               <button
                 key={method.id}
                 onClick={() => setSelectedMethod(method.id)}

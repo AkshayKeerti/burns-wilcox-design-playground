@@ -139,7 +139,7 @@ export default function InTheMiddleEastVariation4() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-            {regionalStats.map((stat, index) => (
+            {regionalStats.map((stat) => (
               <div key={stat.label} className="text-center group">
                 <div className="text-8xl mb-8 group-hover:scale-125 transition-transform duration-700">
                   {stat.icon}
@@ -173,7 +173,7 @@ export default function InTheMiddleEastVariation4() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            {regionalServices.map((service, index) => (
+            {regionalServices.map((service) => (
               <div
                 key={service.title}
                 className={`group relative overflow-hidden rounded-3xl shadow-2xl cursor-pointer transform hover:-translate-y-6 transition-all duration-700 ${

@@ -128,7 +128,7 @@ export default function GlobalPresenceVariation2() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {regions.map((region, index) => (
+            {regions.map((region) => (
               <div
                 key={region.name}
                 className="group bg-white p-8 hover:shadow-2xl transition-all duration-700 hover:-translate-y-2"
@@ -184,7 +184,7 @@ export default function GlobalPresenceVariation2() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-5xl md:text-6xl font-light text-white mb-3">
                   {isVisible ? animatedStats[index] : 0}

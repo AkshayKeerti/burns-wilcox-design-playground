@@ -55,7 +55,7 @@ export default function GlobalPresenceVariation1() {
       {/* Regional Grid */}
       <div className="max-w-7xl mx-auto mb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {regions.map((region, index) => (
+          {regions.map((region) => (
             <div
               key={region.name}
               className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"

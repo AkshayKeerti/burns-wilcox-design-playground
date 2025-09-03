@@ -238,7 +238,7 @@ export default function NewsVariation4() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {featuredNews.slice(1).map((article, index) => (
+            {featuredNews.slice(1).map((article) => (
               <article
                 key={article.id}
                 className="bg-white group hover:shadow-2xl transition-all duration-700 cursor-pointer transform hover:-translate-y-4 rounded-3xl overflow-hidden"
@@ -320,7 +320,7 @@ export default function NewsVariation4() {
             </span>
           </h3>
           <div className="flex flex-wrap justify-center gap-6">
-            {trendingTopics.map((topic, index) => (
+            {trendingTopics.map((topic) => (
               <button
                 key={topic}
                 className="bg-white/15 backdrop-blur-md text-white px-8 py-4 rounded-full border-2 border-white/30 hover:bg-white/25 hover:border-white/50 transition-all duration-500 transform hover:scale-110 font-bold text-lg"

@@ -83,7 +83,6 @@ const benefits = [
 
 export default function CareersVariation3() {
   const [selectedPath, setSelectedPath] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const heroRef = useRef<HTMLDivElement>(null);
   const benefitsRef = useRef<HTMLDivElement>(null);
@@ -94,9 +93,7 @@ export default function CareersVariation3() {
 
       if (benefitsRef.current) {
         const rect = benefitsRef.current.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          setIsVisible(true);
-        }
+        // Animation logic can be added here if needed
       }
     };
 
