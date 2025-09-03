@@ -120,7 +120,7 @@ export default function OurHistoryVariation1() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {historyEras.map((era) => (
+            {historyEras.map((era, index) => (
               <div
                 key={era.decade}
                 className={`bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:-translate-y-2 ${

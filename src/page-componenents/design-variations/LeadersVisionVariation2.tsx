@@ -109,7 +109,7 @@ export default function LeadersVisionVariation2() {
           </div>
 
           <div className="space-y-8">
-            {coreValues.map((value) => (
+            {coreValues.map((value, index) => (
               <div
                 key={value.title}
                 className={`bg-white p-8 border-l-4 transition-all duration-500 cursor-pointer hover:shadow-lg ${

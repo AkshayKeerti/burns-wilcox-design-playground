@@ -144,7 +144,7 @@ export default function LeadersVisionVariation1() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {coreValues.map((value) => (
+            {coreValues.map((value, index) => (
               <div
                 key={value.title}
                 className={`bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:-translate-y-2 ${
@@ -185,7 +185,7 @@ export default function LeadersVisionVariation1() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {visionGoals.map((goal) => (
+            {visionGoals.map((goal, index) => (
               <div
                 key={goal.year}
                 className={`bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:-translate-y-2 ${

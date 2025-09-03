@@ -117,7 +117,7 @@ export default function InTheMiddleEastVariation2() {
           </div>
 
           <div className="space-y-8">
-            {regionalServices.map((service) => (
+            {regionalServices.map((service, index) => (
               <div
                 key={service.title}
                 className={`bg-white p-8 border-l-4 transition-all duration-500 cursor-pointer hover:shadow-lg ${

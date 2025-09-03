@@ -203,7 +203,7 @@ export default function InTheMiddleEastVariation3() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {regionalServices.map((service) => (
+            {regionalServices.map((service, index) => (
               <div
                 key={service.title}
                 className={`group relative bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 cursor-pointer transform hover:-translate-y-4 ${
