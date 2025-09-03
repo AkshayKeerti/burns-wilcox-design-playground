@@ -85,7 +85,7 @@ export default function GlobalPresenceVariation4() {
 
           {/* Bold Region Selector */}
           <div className="flex flex-wrap justify-center gap-6 mb-12">
-            {regions.map((region) => (
+            {regions.map((region, index) => (
               <button
                 key={region.name}
                 onClick={() => setActiveRegion(index)}
@@ -181,7 +181,7 @@ export default function GlobalPresenceVariation4() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            {regions.map((region) => (
+            {regions.map((region, index) => (
               <div
                 key={region.name}
                 className={`group relative overflow-hidden rounded-3xl shadow-2xl cursor-pointer transform hover:-translate-y-6 transition-all duration-700 ${
