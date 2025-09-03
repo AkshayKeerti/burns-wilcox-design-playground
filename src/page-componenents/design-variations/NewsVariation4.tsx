@@ -320,7 +320,7 @@ export default function NewsVariation4() {
             </span>
           </h3>
           <div className="flex flex-wrap justify-center gap-6">
-            {trendingTopics.map((topic) => (
+            {trendingTopics.map((topic, index) => (
               <button
                 key={topic}
                 className="bg-white/15 backdrop-blur-md text-white px-8 py-4 rounded-full border-2 border-white/30 hover:bg-white/25 hover:border-white/50 transition-all duration-500 transform hover:scale-110 font-bold text-lg"
