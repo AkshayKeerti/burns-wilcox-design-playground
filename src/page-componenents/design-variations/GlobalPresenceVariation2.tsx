@@ -184,7 +184,7 @@ export default function GlobalPresenceVariation2() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-            {stats.map((stat) => (
+            {stats.map((stat, index) => (
               <div key={stat.label} className="text-center">
                 <div className="text-5xl md:text-6xl font-light text-white mb-3">
                   {isVisible ? animatedStats[index] : 0}
